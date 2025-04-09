@@ -1,0 +1,29 @@
+@keyframes randomScale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes gravity {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+* {
+    background-color: rgba(30, 220, 10, 0.1);
+    color: purple;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    border: 1px solid rgba(200, 60, 100, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: randomRotate 15s infinite linear, gravity 15s infinite ease-in-out;
+}
