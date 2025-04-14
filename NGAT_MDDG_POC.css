@@ -1,0 +1,76 @@
+#controls--next-button, #controls--start-button {
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 77px;
+  border: none;
+  color: transparent !important;
+  background-color:transparent !important;
+  float: right;
+}
+
+#controls--next-button:disabled {
+  display: none;
+}
+
+body {
+  background-color: #ececec;
+}
+
+#header--progress-panel {
+    font-size: 16pt;
+    color: #999;
+}
+
+.content--response-media {
+    align-self: auto;
+}
+
+#header { 
+    background: transparent;
+}
+
+#content {
+  border: 1px solid #bebebe !important;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content--item-group-wrapper {
+    max-width: 1200px;
+}
+
+#controls--next-button:hover, #controls--start-button:hover {
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
+}
+
+#controls--back-button:hover {
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_selected_1x.png");
+}
+
+#controls--back-button {
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_1x.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 77px;
+  border: none;
+  color: transparent !important;
+  background-color:transparent !important;
+}
+
+.btn-center-stack {
+  justify-content: space-between !important;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.btn-center-stack #controls--next-button:only-child {
+    margin-left: auto;
+}
+
+.button-chevron {
+  display: none;
+}
