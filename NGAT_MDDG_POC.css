@@ -67,7 +67,7 @@ body {
   padding-right: 70px;
 }
 
-.btn-center-stack #controls--next-button:only-child {
+.btn-center-stack #controls--next-button:only-child, #controls--start-button:only-child {
     margin-left: auto;
 }
 
