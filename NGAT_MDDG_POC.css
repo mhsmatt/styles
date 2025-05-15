@@ -10,6 +10,18 @@
   float: right;
 }
 
+.content--toggle-item-group {
+  background-color: #ececec;
+}
+
+.content--toggle-item-group .content--toggle-item-option {
+  background-color: white;
+}
+
+.content--toggle-item-inner {
+  display: none;
+}
+
 #controls--next-button:disabled {
   display: none;
 }
