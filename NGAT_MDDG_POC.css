@@ -11,7 +11,15 @@
 }
 
 .content--toggle-item-group {
-  background-color: #ececec;
+  background-color: none;
+}
+
+#root {
+  padding: 50px;
+}
+
+#page {
+  border: 1px solid #bebebe !important;
 }
 
 .content--toggle-item-group .content--toggle-item-option {
@@ -43,13 +51,6 @@ body {
     background: transparent;
 }
 
-#content {
-  border: 1px solid #bebebe !important;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 .content--item-group-wrapper {
     max-width: 1200px;
 }
