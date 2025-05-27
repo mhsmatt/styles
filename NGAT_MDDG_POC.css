@@ -10,6 +10,30 @@
   float: right;
 }
 
+.content--item-form-group {
+    display: flex;
+    
+}
+
+.page-student-info\.2\.0 #content .col {
+    border: 1px solid #bebebe !important;
+    padding: 50px;
+    padding-left: 50px !important;
+}
+
+.form-label {
+    flex-shrink: 0;
+    width: 125px;
+    text-wrap: nowrap;
+    margin-bottom: 0;
+    align-content: center;
+}
+
+.content--text-input.form-control {
+    max-width: 150px;
+    width: 150px;
+}
+
 .content--toggle-item-group {
   background-color: none;
 }
