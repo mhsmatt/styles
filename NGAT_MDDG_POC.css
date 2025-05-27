@@ -26,6 +26,8 @@
     text-wrap: nowrap;
     margin-bottom: 0;
     align-content: center;
+    padding-left: 20px;
+    margin-right: 20px;
 }
 
 .content--text-input.form-control {
