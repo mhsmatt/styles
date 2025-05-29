@@ -19,10 +19,6 @@
     padding: 50px;
 }
 
-.content--text-input form-control {
-  border: none;
-}
-
 .form-label {
     flex-shrink: 0;
     width: 125px;
@@ -36,6 +32,7 @@
 .content--text-input.form-control {
     max-width: 150px;
     width: 150px;
+    border: none;
 }
 
 .content--toggle-item-group {
