@@ -12,12 +12,15 @@
 
 .content--item-form-group {
     display: flex;
-    
 }
 
 .page-student-info\.2\.0 #content .col {
     border: 1px solid #bebebe !important;
     padding: 50px;
+}
+
+.content--text-input form-control {
+  border: none;
 }
 
 .form-label {
