@@ -1,4 +1,4 @@
-#controls--next-button, #controls--start-button #controls--redirect-button{
+#controls--next-button, #controls--start-button, #controls--redirect-button{
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
   background-size:contain;
   background-repeat: no-repeat;
@@ -84,7 +84,7 @@ body {
     max-width: 1200px;
 }
 
-#controls--next-button:hover, #controls--start-button:hover #controls--redirect-button:hover {
+#controls--next-button:hover, #controls--start-button:hover, #controls--redirect-button:hover {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
 }
 
