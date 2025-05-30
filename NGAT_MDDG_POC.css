@@ -1,4 +1,4 @@
-#controls--next-button, #controls--start-button {
+#controls--next-button, #controls--start-button #controls--redirect-button{
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
   background-size:contain;
   background-repeat: no-repeat;
@@ -8,6 +8,10 @@
   color: transparent !important;
   background-color:transparent !important;
   float: right;
+}
+
+.content--toggle-wrapper {
+  width: auto;
 }
 
 .content--item-form-group {
@@ -80,7 +84,7 @@ body {
     max-width: 1200px;
 }
 
-#controls--next-button:hover, #controls--start-button:hover {
+#controls--next-button:hover, #controls--start-button:hover #controls--redirect-button:hover {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
 }
 
@@ -109,6 +113,22 @@ body {
     margin-left: auto;
 }
 
+.btn-center-stack #controls--redirect-button:only-child {
+  margin-left: auto;
+  opacity: 0;
+  pointer-events: none;
+  animation: enableBtn 0s 5s forwards; /* No gradual display, just enable after set time */
+  transition: background 0.2s, opacity 0.2s, cursor 0.2s;
+}
+
 .button-chevron {
   display: none;
+}
+
+@keyframes enableBtn {
+  to {
+      opacity: 1;
+      pointer-events: auto;
+      cursor: pointer;
+  }
 }
