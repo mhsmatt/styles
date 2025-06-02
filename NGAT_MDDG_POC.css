@@ -37,10 +37,11 @@
     max-width: 150px;
     width: 150px;
     border: none;
+    background-color: unset;
 }
 
 .content--toggle-item-group {
-  background-color: none !important; 
+  background-color: unset !important; 
 }
 
 #root {
