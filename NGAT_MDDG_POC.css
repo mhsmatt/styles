@@ -40,7 +40,7 @@
 }
 
 .content--toggle-item-group {
-  background-color: none;
+  background-color: none !important; 
 }
 
 #root {
@@ -131,4 +131,14 @@ body {
       pointer-events: auto;
       cursor: pointer;
   }
+}
+
+@media only screen and (max-width: 1025px) {
+  .content--item-media {
+    max-height: 275px !important;
+  }
+}
+
+.content--item-media {
+  max-height: 400px;
 }
