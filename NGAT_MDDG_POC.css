@@ -138,8 +138,16 @@ body {
   .content--item-media {
     max-height: 275px !important;
   }
+
+  [class*="nonverbal"] .content--response-media {
+    max-height: 47.86859px;
+  }
 }
 
 .content--item-media {
   max-height: 400px;
+}
+
+[class*="nonverbal"] .content--response-media {
+  max-height: 69.62704px;
 }
