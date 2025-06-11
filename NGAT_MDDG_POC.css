@@ -18,7 +18,7 @@
     display: flex;
 } */
 
-.page-student-info\.2\.0 #content .col {
+.page-student-info\.2\.0 #content .col:first-of-type {
     border: 1px solid #bebebe !important;
     padding: 50px;
 }
