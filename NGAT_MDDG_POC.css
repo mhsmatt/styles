@@ -20,7 +20,7 @@
 
 .page-student-info\.2\.0 #content .col:first-of-type {
     border: 1px solid #bebebe !important;
-    padding: 50px;
+    padding: 50px 50px !important;
 }
 
 /* .form-label {
