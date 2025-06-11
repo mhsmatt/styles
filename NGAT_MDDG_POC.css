@@ -35,6 +35,7 @@
 
 .content--text-input.form-control {
     background-color: unset;
+    font-weight: bold;
 }
 
 .content--toggle-item-group {
