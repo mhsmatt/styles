@@ -33,12 +33,10 @@
     margin-right: 20px;
 } */
 
-/* .content--text-input.form-control {
-    max-width: 150px;
-    width: 150px;
+.content--text-input.form-control {
     border: none;
     background-color: unset;
-} */
+}
 
 .content--toggle-item-group {
   background-color: unset !important; 
