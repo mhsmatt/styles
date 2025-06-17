@@ -1,9 +1,17 @@
+:root {
+  --border-color: #bebebe;
+  --background-color: #ececec;
+  --header-text-color: #999;
+  --button-width: 100px;
+  --button-height: 77px;
+}
+
 #controls--next-button, #controls--start-button, #controls--redirect-button{
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
   background-size:contain;
   background-repeat: no-repeat;
-  width: 100px;
-  height: 77px;
+  width: var(--button-width);
+  height: var(--button-height);
   border: none;
   color: transparent !important;
   background-color:transparent !important;
@@ -15,7 +23,7 @@
 }
 
 .page-student-info\.2\.0 #content .col:first-of-type {
-    border: 1px solid #bebebe !important;
+    border: 1px solid var(--border-color) !important;
     padding: 50px 50px !important;
 }
 
@@ -33,7 +41,7 @@
 }
 
 #page {
-  border: 1px solid #bebebe !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 .content--toggle-item-group .content--toggle-item-option {
@@ -50,12 +58,12 @@
 }
 
 body {
-  background-color: #ececec;
+  background-color: var(--background-color);
 }
 
 #header--progress-panel {
     font-size: 16pt;
-    color: #999;
+    color: var(--header-text-color);
 }
 
 .content--response-media {
@@ -82,8 +90,8 @@ body {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_1x.png");
   background-size:contain;
   background-repeat: no-repeat;
-  width: 100px;
-  height: 77px;
+  width: var(--button-width);
+  height: var(--button-height);
   border: none;
   color: transparent !important;
   background-color:transparent !important;
