@@ -14,24 +14,10 @@
   width: auto;
 }
 
-/* .content--item-form-group {
-    display: flex;
-} */
-
 .page-student-info\.2\.0 #content .col:first-of-type {
     border: 1px solid #bebebe !important;
     padding: 50px 50px !important;
 }
-
-/* .form-label {
-    flex-shrink: 0;
-    width: 125px;
-    text-wrap: nowrap;
-    margin-bottom: 0;
-    align-content: center;
-    padding-left: 20px;
-    margin-right: 20px;
-} */
 
 .content--text-input.form-control {
     background-color: unset;
@@ -52,6 +38,7 @@
 
 .content--toggle-item-group .content--toggle-item-option {
   background-color: white;
+  padding: 8px 8px !important;
 }
 
 .content--toggle-item-inner {
