@@ -49,10 +49,6 @@
   padding: 8px 8px !important;
 }
 
-.content--toggle-item-inner {
-  display: none;
-}
-
 #controls--next-button:disabled {
   display: none;
 }
@@ -143,4 +139,13 @@ body {
 
 [class*="nonverbal"] .content--response-media {
   max-height: 69.62704px;
+}
+
+[class*="quant"] .content--toggle-item-inner div,[class*="nonverbal"] .content--toggle-item-inner div {
+  width: 100%;
+  text-align: center;
+}
+
+.content--toggle-item-option-indicator.radio{
+  display: none;
 }
