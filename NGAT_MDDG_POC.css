@@ -18,7 +18,7 @@
   float: right;
 }
 
-#controls--next-button.welcome-page-next-btn {
+.page-welcome\.1 #controls--next-button {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png")
 }
 
@@ -82,7 +82,7 @@ body {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
 }
 
-.welcome-page-next-btn#controls--next-button:hover {
+.page-welcome\.1 #controls--next-button:hover {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_selected_1x.png");
 }
 
