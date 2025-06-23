@@ -18,6 +18,10 @@
   float: right;
 }
 
+#controls--next-button.welcome-page-next-btn {
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png")
+}
+
 .content--toggle-wrapper {
   width: auto;
 }
@@ -76,6 +80,10 @@ body {
 
 #controls--next-button:hover, #controls--start-button:hover, #controls--redirect-button:hover {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
+}
+
+.welcome-page-next-btn#controls--next-button:hover {
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_selected_1x.png");
 }
 
 #controls--back-button:hover {
