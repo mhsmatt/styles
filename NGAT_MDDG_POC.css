@@ -53,6 +53,14 @@
   padding: 8px 8px !important;
 }
 
+.content--toggle-item-group .content--toggle-item-option:focus-visible,
+.content--toggle-item-group .content--toggle-item-option.toggled,
+.content--toggle-item-group .btn-check:focus-visible + label,
+.content--toggle-item-group .content--toggle-item-option:active {
+  background-color: #555B6E !important;
+  border-color: #555B6E !important;
+}
+
 #controls--next-button:disabled {
   display: none;
 }
