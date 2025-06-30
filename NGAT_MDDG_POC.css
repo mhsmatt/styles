@@ -80,6 +80,10 @@ body {
   }
 
 /* Align the header elements */
+.headerHiddentPanel {
+  display: block;
+}
+
 .mobileHeader {
     display: flex;
   }
