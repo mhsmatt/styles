@@ -182,3 +182,10 @@ body {
 .content--toggle-item-option-indicator.radio{
   display: none;
 }
+
+.content--page-description{
+    background-color: #a6a6a6;
+    color: white;
+    padding: 10px !important;
+    font-weight: bold;
+}
