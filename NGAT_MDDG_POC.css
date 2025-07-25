@@ -189,3 +189,7 @@ body {
     padding: 10px !important;
     font-weight: bold;
 }
+
+#content > div > div > div > div > img {
+  width: 275px;
+}
