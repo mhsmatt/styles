@@ -193,3 +193,11 @@ body {
 #content > div > div > div > div > img {
   width: 275px;
 }
+
+.content--item-group-wrapper {
+  gap: 0;
+}
+
+.video-player {
+  width: 660px;
+}
