@@ -1,7 +1,7 @@
 :root {
   --border-color: #bebebe;
   --background-color: #ececec;
-  --header-text-color: #999;
+  --header-text-color: #221f1f;
   --button-width: 100px;
   --button-height: 77px;
 }
@@ -183,12 +183,6 @@ body {
   display: none;
 }
 
-.content--page-description{
-    background-color: #a6a6a6;
-    color: white;
-    padding: 10px !important;
-    font-weight: bold;
-}
 
 #content > div > div > div > div > img {
   width: 275px;
