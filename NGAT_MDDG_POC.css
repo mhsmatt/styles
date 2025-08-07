@@ -164,6 +164,10 @@ body {
   [class*="nonverbal"] .content--response-media {
     max-height: 47.86859px !important;
   }
+
+  .video-player {
+    width: 660px;
+  }
 }
 
 .content--item-media {
@@ -190,8 +194,4 @@ body {
 
 .content--item-group-wrapper {
   gap: 0;
-}
-
-.video-player {
-  width: 660px;
 }
