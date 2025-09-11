@@ -22,6 +22,10 @@
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png")
 }
 
+.page-review\.7 #controls--next-button {
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
+}
+
 .content--toggle-wrapper {
   width: auto;
 }
