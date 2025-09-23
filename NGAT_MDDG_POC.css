@@ -4,14 +4,16 @@
   --header-text-color: #221f1f;
   --button-width: 100px;
   --button-height: 77px;
+  --submit-button-width: 124px;
+  --submit-button-height: 88;
 }
 
 #controls--next-button, #controls--start-button, #controls--redirect-button{
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
   background-size:contain;
   background-repeat: no-repeat;
-  /* width: var(--button-width); */
-  /* height: var(--button-height); */
+  width: var(--button-width);
+  height: var(--button-height);
   border: none;
   color: transparent !important;
   background-color:transparent !important;
@@ -24,6 +26,8 @@
 
 .page-review\.7 #controls--next-button {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
+  width: var(--submit-button-width);
+  height: var(--submit-button-height);
 }
 
 .content--toggle-wrapper {
