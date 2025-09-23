@@ -10,8 +10,8 @@
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
   background-size:contain;
   background-repeat: no-repeat;
-  width: var(--button-width);
-  height: var(--button-height);
+  /* width: var(--button-width); */
+  /* height: var(--button-height); */
   border: none;
   color: transparent !important;
   background-color:transparent !important;
