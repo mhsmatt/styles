@@ -20,16 +20,12 @@
   float: right;
 }
 
-#content {
-  padding: 0px;
-}
-
 .page-welcome\.1 #controls--next-button {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png")
 }
 
-.page-student-info\.2\.0 #content {
-  padding: 32px 10%
+.page-instructions\.3\.0 #content {
+  padding: 0px;
 }
 
 .page-review\.7 #controls--next-button {
