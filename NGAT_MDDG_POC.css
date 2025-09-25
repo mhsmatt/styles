@@ -223,3 +223,7 @@ body {
 .video-container {
   width: 80%;
 }
+
+#content > div > div > div > div > div.content--item-prompt.undefined > div > div > img {
+  width: 80%;
+}
