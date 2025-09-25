@@ -5,7 +5,7 @@
   --button-width: 100px;
   --button-height: 77px;
   --submit-button-width: 124px;
-  --submit-button-height: 88;
+  --submit-button-height: 88px;
 }
 
 #controls--next-button, #controls--start-button, #controls--redirect-button{
@@ -150,6 +150,14 @@ body {
   justify-content: space-between !important;
   padding-left: 70px;
   padding-right: 70px;
+}
+
+.page-review\.7 .btn-center-stack {
+  align-items: center;
+  width: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .btn-center-stack #controls--next-button:only-child,.btn-center-stack #controls--start-button:only-child {
