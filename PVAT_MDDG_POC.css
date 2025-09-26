@@ -2,3 +2,70 @@
 .timers-container{
   display:none
 }
+
+
+#controls--next-button:not(.modal-content *),
+#controls--start-button:not(.modal-content *) {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding-right: 2rem !important;
+  overflow: visible;
+  --next-bg: #2978bb !important;
+  --next-bg-hover: #215b8c !important;
+  --next-bg-disabled: #f6f6f6 !important;
+}
+
+#controls--next-button:not(.modal-content *):hover,
+#controls--start-button:not(.modal-content *):hover {
+  background: var(--next-bg-hover) !important;
+}
+
+#controls--next-button:not(.modal-content *):disabled,
+#controls--start-button:not(.modal-content *):disabled {
+  background: var(--next-bg-disabled) !important;
+}
+
+
+#controls--next-button:not(.modal-content *)::after,
+#controls--start-button:not(.modal-content *)::after {
+  content: '';
+  position: absolute;
+  top: -0.3px;
+  left: calc(100% + -0.5px);
+  bottom: -0.3px;
+  aspect-ratio: 1 / 2;
+  display: block;
+  background: var(--next-bg);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+#controls--next-button:not(.modal-content *):hover::after,
+#controls--start-button:not(.modal-content *):hover::after {
+  background: var(--next-bg-hover) !important;
+}
+
+#controls--next-button:not(.modal-content *):disabled::after,
+#controls--start-button:not(.modal-content *):disabled::after {
+  background: var(--next-bg-disabled) !important;
+}
+
+#controls--next-button:not(.modal-content *)::before,
+#controls--start-button:not(.modal-content *)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: .5rem;
+  bottom: 0;
+  aspect-ratio: 1 / 1;
+  display: block;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+#controls--next-button:not(.modal-content *) svg,
+#controls--start-button:not(.modal-content *) svg {
+  display: none;
+}
