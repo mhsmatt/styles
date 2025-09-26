@@ -218,9 +218,9 @@ body {
 }
 
 .video-container {
-  width: 65%;
+  max-width: 1200px;
 }
 
 #content > div > div:nth-child(1) > img {
-  width: 80%;
+  max-width: 800px;
 }
