@@ -24,10 +24,6 @@
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png")
 }
 
-.page-instructions\.3\.0 #content {
-  padding: 0px;
-}
-
 .page-review\.7 #controls--next-button {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
   width: var(--submit-button-width);
@@ -218,9 +214,9 @@ body {
 }
 
 .video-container {
-  max-width: 1200px;
+  max-width: 800px;
 }
 
 #content > div > div:nth-child(1) > img {
-  max-width: 800px;
+  max-width: 1200px;
 }
