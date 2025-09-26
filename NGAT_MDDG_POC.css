@@ -221,6 +221,6 @@ body {
   width: 65%;
 }
 
-#content > div > div > div > div > div:nth-child(1) > img {
+#content > div > div:nth-child(1) > img {
   width: 80%;
 }
