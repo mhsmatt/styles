@@ -20,11 +20,11 @@
   float: right;
 }
 
-.page-welcome\.1 #controls--next-button {
+.page-preTasks\.6 #controls--next-button {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png")
 }
 
-.page-review\.7 #controls--next-button {
+.page-review\.8 #controls--next-button {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
   width: var(--submit-button-width);
   height: var(--submit-button-height);
@@ -115,11 +115,11 @@ body {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
 }
 
-.page-welcome\.1 #controls--next-button:hover {
+.page-preTasks\.6 #controls--next-button:hover {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_selected_1x.png");
 }
 
-.page-review\.7 #controls--next-button:hover {
+.page-review\.8 #controls--next-button:hover {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn-selected.svg");
 }
 
@@ -144,7 +144,7 @@ body {
   padding-right: 70px;
 }
 
-.page-review\.7 .btn-center-stack {
+.page-review\.8 .btn-center-stack {
   align-items: center;
   width: 50%;
   top: 50%;
@@ -214,9 +214,11 @@ body {
 }
 
 .video-container {
+  width:70%;
   max-width: 800px;
 }
 
-#content > div > div:nth-child(1) > img {
+.page-instructions\.2\.0 > #content > div > div:nth-child(1) > img {
   max-width: 1200px;
+  width: 100%;
 }
