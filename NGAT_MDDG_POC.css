@@ -218,6 +218,13 @@ body {
   max-width: 800px;
 }
 
+/* STOP HAND */
+#content > div > div > img {
+  max-width: 50%;
+  margin-bottom: 0;
+}
+
+/* INSTRUCTIONAL IMAGE (SHORTCUT ALT+K) */
 .page-instructions\.2\.0 > #content > div > div:nth-child(1) > img {
   max-width: 1200px;
   width: 100%;
