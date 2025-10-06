@@ -167,8 +167,13 @@ body {
 
 .page-ending\.10 > #content > div > div > div > div > div > img {
   content: url("https://cdn.mhs.com/mhscdn/Gifted/Common/gifted__stophand_1x.png");
-  max-width: 50%;
+  max-width: 85%;
   margin-bottom: 0;
+}
+
+.icon-style {
+  height: auto;
+  width: auto;
 }
 
 .button-chevron {
