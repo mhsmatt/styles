@@ -3,69 +3,165 @@
   display:none
 }
 
-@media only screen and (min-width: 768px) {
-  #controls--next-button:not(.modal-content *),
-  #controls--start-button:not(.modal-content *) {
-    position: relative;
-    border: none;
-    display: inline-block;
-    padding-right: 2rem !important;
-    overflow: visible;
-    --next-bg: #2978bb !important;
-    --next-bg-hover: #215b8c !important;
-    --next-bg-disabled: #f6f6f6 !important;
+.btn-center-stack {
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto;
+  --bs-gutter-x: 0;
+}
+
+#controls {
+  padding: 0 10% 60px;
+}
+
+#controls .btn-center-stack > :first-child {
+  margin-right: auto;
+}
+
+#controls .btn-center-stack > :last-child {
+  margin-left: auto;
+}
+
+.audio-controls-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 767px) {
+  .btn-center-stack {
+    flex-direction: row;
   }
 
-  #controls--next-button:not(.modal-content *):hover,
-  #controls--start-button:not(.modal-content *):hover {
-    background: var(--next-bg-hover) !important;
+  .btn-center-stack.full-width .btn {
+    width: auto;
   }
 
-  #controls--next-button:not(.modal-content *):disabled,
-  #controls--start-button:not(.modal-content *):disabled {
-    background: var(--next-bg-disabled) !important;
+  .audio-controls-container {
+    transform: translateY(-70%);
   }
+}
 
-  #controls--next-button:not(.modal-content *)::after,
-  #controls--start-button:not(.modal-content *)::after {
-    content: '';
-    position: absolute;
-    top: -0.3px;
-    left: calc(100% + -0.5px);
-    bottom: -0.3px;
-    aspect-ratio: 1 / 2;
-    display: block;
-    background: var(--next-bg);
-    clip-path: polygon(0 0, 100% 50%, 0 100%);
-  }
+/* Unified Navigation Buttons (Next / Start / Back) */
+#controls--next-button:not(.modal-content *),
+#controls--start-button:not(.modal-content *),
+#controls--back-button:not(.modal-content *) {
+  position: relative;
+  border: none;
+  display: inline-block;
+  overflow: visible;
+  color: white !important;
+  --nav-btn-bg: #2978bb !important;
+  --nav-btn-bg-hover: #215b8c !important;
+  --nav-btn-btn-disabled-fallback: #f6f6f6 !important; /* legacy fallback name */
+  --nav-btn-bg-disabled: #f6f6f6 !important;
+  background: var(--nav-btn-bg) !important;
+}
 
-  #controls--next-button:not(.modal-content *):hover::after,
-  #controls--start-button:not(.modal-content *):hover::after {
-    background: var(--next-bg-hover) !important;
-  }
+/* Directional spacing */
+#controls--next-button:not(.modal-content *),
+#controls--start-button:not(.modal-content *) {
+  margin-right: 21px;
+  padding-right: 2rem !important;
+}
 
-  #controls--next-button:not(.modal-content *):disabled::after,
-  #controls--start-button:not(.modal-content *):disabled::after {
-    background: var(--next-bg-disabled) !important;
-  }
+#controls--back-button:not(.modal-content *) {
+  margin-left: 21px;
+  padding-left: 2rem !important;
+}
 
-  #controls--next-button:not(.modal-content *)::before,
-  #controls--start-button:not(.modal-content *)::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: .5rem;
-    bottom: 0;
-    aspect-ratio: 1 / 1;
-    display: block;
-    border-right: 4px solid #fff;
-    border-bottom: 4px solid #fff;
-    transform: rotate(-45deg);
-    z-index: 1;
-  }
+/* Hover */
+#controls--next-button:not(.modal-content *):hover,
+#controls--start-button:not(.modal-content *):hover,
+#controls--back-button:not(.modal-content *):hover {
+  background: var(--nav-btn-bg-hover) !important;
+}
 
-  #controls--next-button:not(.modal-content *) svg,
-  #controls--start-button:not(.modal-content *) svg {
-    display: none;
-  }
+/* Disabled */
+#controls--next-button:not(.modal-content *):disabled,
+#controls--start-button:not(.modal-content *):disabled,
+#controls--back-button:not(.modal-content *):disabled {
+  background: var(--nav-btn-bg-disabled) !important;
+}
+
+/* Forward (right-pointing) wedge */
+#controls--next-button:not(.modal-content *)::after,
+#controls--start-button:not(.modal-content *)::after {
+  content: '';
+  position: absolute;
+  top: -0.3px;
+  left: calc(100% + -0.5px);
+  bottom: -0.3px;
+  aspect-ratio: 1 / 2;
+  display: block;
+  background: var(--nav-btn-bg);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+#controls--next-button:not(.modal-content *):hover::after,
+#controls--start-button:not(.modal-content *):hover::after {
+  background: var(--nav-btn-bg-hover) !important;
+}
+
+#controls--next-button:not(.modal-content *):disabled::after,
+#controls--start-button:not(.modal-content *):disabled::after {
+  background: var(--nav-btn-bg-disabled) !important;
+}
+
+/* Back (left-pointing) wedge */
+#controls--back-button:not(.modal-content *)::after {
+  content: '';
+  position: absolute;
+  top: -0.3px;
+  right: calc(100% + -0.5px);
+  bottom: -0.3px;
+  aspect-ratio: 1 / 2;
+  display: block;
+  background: var(--nav-btn-bg);
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+#controls--back-button:not(.modal-content *):hover::after {
+  background: var(--nav-btn-bg-hover) !important;
+}
+
+#controls--back-button:not(.modal-content *):disabled::after {
+  background: var(--nav-btn-bg-disabled) !important;
+}
+
+/* Inner chevrons */
+#controls--next-button:not(.modal-content *)::before,
+#controls--start-button:not(.modal-content *)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  bottom: 0;
+  aspect-ratio: 1 / 1;
+  display: block;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+#controls--back-button:not(.modal-content *)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  bottom: 0;
+  aspect-ratio: 1 / 1;
+  display: block;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transform: rotate(135deg);
+  z-index: 1;
+}
+
+/* Hide embedded SVG icons for custom shape */
+#controls--next-button:not(.modal-content *) svg,
+#controls--start-button:not(.modal-content *) svg,
+#controls--back-button:not(.modal-content *) svg {
+  display: none;
 }
