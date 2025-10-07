@@ -1,1 +1,11 @@
+video {
+    background: transparent;
+}
 
+.video-controls-container {
+    display: none;
+}
+
+.bi bi-play-circle-fill {
+    fill: black;
+}
