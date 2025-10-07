@@ -6,6 +6,21 @@
     display: none;
 }
 
-.bi, .bi-play-circle-fill {
-    fill: lightsteelblue;
+.bi-play-circle-fill {
+    background: url(https://mhsmatt.github.io/styles/images/pvat_soundcheck_btn.png) no-repeat center;
+    background-size: cover;
+}
+
+.bi-play-circle-fill:hover {
+    background: url(https://mhsmatt.github.io/styles/images/pvat_soundcheck_btn_hover.png) no-repeat center;
+    background-size: cover;
+}
+
+.bi-play-circle-fill:active {
+    background: url(https://mhsmatt.github.io/styles/images/pvat_soundcheck_btn_selected.png) no-repeat center;
+    background-size: cover;
+}
+
+.bi-play-circle-fill path {
+    display: none;
 }
