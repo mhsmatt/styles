@@ -1,0 +1,7 @@
+.bi-play-circle-fill {
+  background: url(https://lipsum.app/28x28) no-repeat center;
+}
+
+.bi-play-circle-fill path {
+  display: none;
+}
