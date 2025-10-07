@@ -9,6 +9,7 @@
 .bi-play-circle-fill {
     background: url(https://mhsmatt.github.io/styles/images/pvat_soundcheck_btn.png) no-repeat center;
     background-size: cover;
+    cursor: pointer;
 }
 
 .bi-play-circle-fill:hover {
