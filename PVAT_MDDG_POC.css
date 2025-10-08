@@ -22,12 +22,6 @@
   margin-left: auto;
 }
 
-.audio-controls-container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 @media only screen and (max-width: 767px) {
   .btn-center-stack {
     flex-direction: row;
@@ -35,10 +29,6 @@
 
   .btn-center-stack.full-width .btn {
     width: auto;
-  }
-
-  .audio-controls-container {
-    transform: translateY(-70%);
   }
 }
 
