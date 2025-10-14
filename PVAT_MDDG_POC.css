@@ -43,7 +43,6 @@
   color: white !important;
   --nav-btn-bg: #2978bb !important;
   --nav-btn-bg-hover: #215b8c !important;
-  --nav-btn-btn-disabled-fallback: #f6f6f6 !important; /* legacy fallback name */
   --nav-btn-bg-disabled: #f6f6f6 !important;
   background: var(--nav-btn-bg) !important;
 }
@@ -154,6 +153,33 @@
 #controls--start-button:not(.modal-content *) svg,
 #controls--back-button:not(.modal-content *) svg {
   display: none;
+}
+
+.audio-controls-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  top: 100%;
+  background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg");
+  width: 42px;
+  height: 42px;
+}
+
+.audio-controls-container.audio-active {
+  background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg");
+}
+
+.audio-controls {
+  opacity: 0;
+}
+
+.content--item-group-wrapper {
+  transform: none;
+}
+
+#content {
+  position: relative;
 }
 
 .page-instructions\.2 .audio-controls-container {
