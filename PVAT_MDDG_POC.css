@@ -155,3 +155,30 @@
 #controls--back-button:not(.modal-content *) svg {
   display: none;
 }
+
+.page-instructions\.2 .audio-controls-container {
+  position: static;
+  left: unset;
+  transform: unset;
+  top: unset;
+  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn.png');
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.page-instructions\.2 .audio-controls-container:hover {
+  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_hover.png');
+  background-size: cover;
+}
+
+.page-instructions\.2 .audio-controls-container.audio-active {
+  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_selected.png');
+  background-size: cover;
+}
+
+.page-instructions\.2 .audio-controls button {
+  width: 150px;
+  height: 150px;
+}
