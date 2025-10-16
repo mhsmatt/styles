@@ -1,8 +1,4 @@
-@keyframes flashOrange1 {
-  100% { background:#444; }
-  95% { background:orange; color:#111; }
-}
-
+@keyframes flashOrange1,
 @keyframes flashOrange2 {
   100% { background:#444; }
   95% { background:orange; color:#111; }
@@ -24,5 +20,5 @@
 }
 
 .page-practiceItems\.4\.0 #controls--next-button {
-  animation: highlightOrange 1s infinite forwards 15s;
+  animation: highlightOrange 1s linear 15s forwards;
 }
