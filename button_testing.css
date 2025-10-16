@@ -66,10 +66,10 @@
 .page-practiceItems\.4\.3 #controls--back-button { animation: flashOrange3 1s linear 10s }
 
 /* Animations (1 for each unique page) */
-@keyframes flashOrange0 { to { opacity: 1 } }
-@keyframes flashOrange1 { to { opacity: 1 } }
-@keyframes flashOrange2 { to { opacity: 1 } }
-@keyframes flashOrange3 { to { opacity: 1 } }
+@keyframes flashOrange0 { 0%, 99% { opacity: 1 } }
+@keyframes flashOrange1 { 0%, 99% { opacity: 1 } }
+@keyframes flashOrange2 { 0%, 99% { opacity: 1 } }
+@keyframes flashOrange3 { 0%, 99% { opacity: 1 } }
 
 /* 
 ======================================
@@ -145,5 +145,3 @@
 @keyframes revealOrange1 { to { opacity: 1 } }
 @keyframes revealOrange2 { to { opacity: 1 } }
 @keyframes revealOrange3 { to { opacity: 1 } }
-
-
