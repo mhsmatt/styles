@@ -21,7 +21,6 @@
   background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png) center no-repeat;
   pointer-events: none;
   opacity: 0;
-  animation: flashOrange0 0s linear 10s;
 }
 
 /* Hide additional elements within the button */
@@ -58,9 +57,10 @@
 }
 
 /* Assign additional delay animations */
-.page-practiceItems\.4\.1 #controls--back-button { animation-name: flashOrange1; }
-.page-practiceItems\.4\.2 #controls--back-button { animation-name: flashOrange2; }
-.page-practiceItems\.4\.3 #controls--back-button { animation-name: flashOrange3; }
+.page-practiceItems\.4\.0 #controls--back-button { animation: flashOrange0 0s linear 10s }
+.page-practiceItems\.4\.1 #controls--back-button { animation: flashOrange0 0s linear 10s }
+.page-practiceItems\.4\.2 #controls--back-button { animation: flashOrange0 0s linear 10s }
+.page-practiceItems\.4\.3 #controls--back-button { animation: flashOrange0 0s linear 10s }
 
 /* Animations (1 for each unique page) */
 @keyframes flashOrange0 { to { opacity: 1 } }
