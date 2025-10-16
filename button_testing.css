@@ -8,13 +8,11 @@
 
 @keyframes highlightOrange1 {
   to {
-    background: orange !important;
-    color: #111 !important;
+    background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_orange.png) center no-repeat !important;
   }
 }
 
 .page-practiceItems\.4\.0 #controls--back-button {
-  
   animation: flashOrange1 1s linear 10s;
 }
 
@@ -28,5 +26,14 @@
   height: 43px;
   border: none !important;
   background-color: transparent !important;
-  background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_orange.png) center no-repeat !important;
+  color: transparent;
+  background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn.png) center no-repeat !important;
+}
+
+.page-practiceItems\.4\.0 #controls--next-button:hover {
+  background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_hover.png) center no-repeat !important;
+}
+
+.page-practiceItems\.4\.0 #controls--next-button:active {
+  background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_hover.png) center no-repeat !important;
 }
