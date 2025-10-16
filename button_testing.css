@@ -1,8 +1,12 @@
-@keyframes flashOrange {
+@keyframes flashOrange1 {
   0%,
-  1%,
   100% { background:#444; }
-  5%,
+  95% { background:orange; color:#111; }
+}
+
+@keyframes flashOrange2 {
+  0%,
+  100% { background:#444; }
   95% { background:orange; color:#111; }
 }
 
@@ -13,12 +17,12 @@
   }
 }
 
-.page-practiceItems\.4\.0 #controls--back-button,
-.page-practiceItems\.4\.1 #controls--back-button,
-.page-practiceItems\.4\.2 #controls--back-button,
-.page-practiceItems\.4\.3 #controls--back-button,
-.page-practiceItems\.4\.4 #controls--back-button {
-  animation: flashOrange 1s linear 10s;
+.page-practiceItems\.4\.0 #controls--back-button {
+  animation: flashOrange1 1s linear 10s;
+}
+
+.page-practiceItems\.4\.1 #controls--back-button {
+  animation: flashOrange2 1s linear 10s;
 }
 
 .page-practiceItems\.4\.0 #controls--next-button {
