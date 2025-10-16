@@ -13,11 +13,14 @@
   }
 }
 
-.page-practiceItems\.4\.0 #controls--back-button {
+.page-practiceItems\.4\.0 #controls--back-button,
+.page-practiceItems\.4\.1 #controls--back-button,
+.page-practiceItems\.4\.2 #controls--back-button,
+.page-practiceItems\.4\.3 #controls--back-button,
+.page-practiceItems\.4\.4 #controls--back-button {
   animation: flashOrange 1s linear 10s;
 }
 
 .page-practiceItems\.4\.0 #controls--next-button {
-  animation: highlightOrange 0.4s forwards;
-  animation-delay: 15s;
+  animation: highlightOrange 0s forwards 15s;
 }
