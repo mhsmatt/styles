@@ -1,0 +1,23 @@
+@keyframes flashOrange {
+  0%,
+  1%,
+  100% { background:#444; }
+  5%,
+  95% { background:orange; color:#111; }
+}
+
+@keyframes highlightOrange {
+  to {
+    background: orange;
+    color: #111;
+  }
+}
+
+.page-practiceItems\.4\.0 #controls--back-button {
+  animation: flashOrange 1s linear 10s;
+}
+
+.page-practiceItems\.4\.0 #controls--next-button {
+  animation: highlightOrange 0.4s forwards;
+  animation-delay: 15s;
+}
