@@ -14,6 +14,7 @@
 }
 
 .page-practiceItems\.4\.0 #controls--back-button {
+  
   animation: flashOrange1 1s linear 10s;
 }
 
@@ -21,6 +22,11 @@
   animation: flashOrange2 1s linear 10s;
 }
 
-.page-practiceItems\.4\.0 #controls--next-button.btn-primary {
+.page-practiceItems\.4\.0 #controls--next-button {
   animation: highlightOrange1 0.001s linear 15s forwards;
+  width: 143px;
+  height: 43px;
+  border: none !important;
+  background-color: transparent !important;
+  background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_orange.png) center no-repeat !important;
 }
