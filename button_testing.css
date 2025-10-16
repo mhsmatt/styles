@@ -1,3 +1,9 @@
+/* 
+======================================
+        BACK BUTTON (Audio)
+======================================
+*/
+
 /* Clear style of back button, and set sizing to match image */
 .page-practiceItems\.4\.0 #controls--back-button,
 .page-practiceItems\.4\.1 #controls--back-button,
@@ -91,9 +97,9 @@
 
 /* Setup for next button highlight */
 .page-practiceItems\.4\.0 #controls--next-button::after,
-.page-practiceItems\.4\.0 #controls--next-button::after,
-.page-practiceItems\.4\.0 #controls--next-button::after,
-.page-practiceItems\.4\.0 #controls--next-button::after {
+.page-practiceItems\.4\.1 #controls--next-button::after,
+.page-practiceItems\.4\.2 #controls--next-button::after,
+.page-practiceItems\.4\.3 #controls--next-button::after {
   content: "";
   position: absolute;
   inset: 0;
