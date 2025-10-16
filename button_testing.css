@@ -1,27 +1,27 @@
 /* Clear style of back button, and set sizing to match image */
 .page-practiceItems\.4\.0 #controls--back-button,
 .page-practiceItems\.4\.1 #controls--back-button,
-.page-practiceItems\.4\.1 #controls--back-button,
-.page-practiceItems\.4\.1 #controls--back-button {
+.page-practiceItems\.4\.2 #controls--back-button,
+.page-practiceItems\.4\.3 #controls--back-button {
   position: relative;
-  width: 63px;
-  height: 63px;
+  width: 43px;
+  height: 43px;
   border: none !important;
   background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png) center no-repeat !important;
 }
 
 /* Setup for sound button highlight */
 .page-practiceItems\.4\.0 #controls--back-button::after,
-.page-practiceItems\.4\.0 #controls--back-button::after,
-.page-practiceItems\.4\.0 #controls--back-button::after,
-.page-practiceItems\.4\.0 #controls--back-button::after {
+.page-practiceItems\.4\.1 #controls--back-button::after,
+.page-practiceItems\.4\.2 #controls--back-button::after,
+.page-practiceItems\.4\.3 #controls--back-button::after {
   content: "";
   position: absolute;
   inset: 0;
   background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png) center no-repeat;
   pointer-events: none;
   opacity: 0;
-  animation: flashOrange0 1s linear 10s;
+  animation: flashOrange0 0s linear 10s;
 }
 
 /* Hide additional elements within the button */
@@ -31,7 +31,6 @@
 .page-practiceItems\.4\.3 #controls--back-button > * {
   display: none;
 }
-
 
 /* Handle hover state */
 .page-practiceItems\.4\.0 #controls--back-button:hover,
@@ -98,7 +97,6 @@
   background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_orange.png) center no-repeat;
   pointer-events: none;
   opacity: 0;
-  animation: revealOrange0 0.2s linear 15s forwards;
 }
 
 /* Hide additional elements within the button */
@@ -135,9 +133,10 @@
 }
 
 /* Assign additional delay animations */
-.page-practiceItems\.4\.1 #controls--next-button::after { animation-name: revealOrange1 }
-.page-practiceItems\.4\.2 #controls--next-button::after { animation-name: revealOrange2 }
-.page-practiceItems\.4\.3 #controls--next-button::after { animation-name: revealOrange3 }
+.page-practiceItems\.4\.0 #controls--next-button::after { animation: revealOrange0 0s linear 15s forwards }
+.page-practiceItems\.4\.1 #controls--next-button::after { animation: revealOrange1 0s linear 15s forwards }
+.page-practiceItems\.4\.2 #controls--next-button::after { animation: revealOrange2 0s linear 15s forwards }
+.page-practiceItems\.4\.3 #controls--next-button::after { animation: revealOrange3 0s linear 15s forwards }
 
 /* Animations (1 for each unique page) */
 @keyframes revealOrange0 { to { opacity: 1 } }
