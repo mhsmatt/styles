@@ -1,19 +1,17 @@
 @keyframes flashOrange1 {
-  0%,
   100% { background:#444; }
   95% { background:orange; color:#111; }
 }
 
 @keyframes flashOrange2 {
-  0%,
   100% { background:#444; }
   95% { background:orange; color:#111; }
 }
 
 @keyframes highlightOrange {
   to {
-    background: orange;
-    color: #111;
+    background: orange !important;
+    color: #111 !important;
   }
 }
 
