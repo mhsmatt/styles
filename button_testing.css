@@ -21,6 +21,6 @@
   animation: flashOrange2 1s linear 10s;
 }
 
-.page-practiceItems\.4\.0 #controls--next-button {
-  animation: highlightOrange1 0s linear 15s forwards;
+.page-practiceItems\.4\.0 #controls--next-button.btn-primary {
+  animation: highlightOrange1 0.001s linear 15s forwards;
 }
