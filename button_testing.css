@@ -25,7 +25,7 @@
   opacity: 0;
 }
 
-/* Hide additional elements within the button */
+/* Hide additional elements within the button (Text and Arrow) */
 [class^="page-practiceItems.4."] #controls--back-button > * {
   display: none;
 }
@@ -79,9 +79,10 @@
   background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_orange.png) center no-repeat;
   pointer-events: none;
   opacity: 0;
+  animation: revealOrange0 0s linear 15s forwards;
 }
 
-/* Hide additional elements within the button */
+/* Hide additional elements within the button (Text and Arrow) */
 [class^="page-practiceItems.4."] #controls--next-button > * {
   display: none;
 }
@@ -103,13 +104,13 @@
 }
 
 /* Assign additional delay animations */
-.page-practiceItems\.4\.0 #controls--next-button::after { animation: revealOrange0 0s linear 15s forwards }
+/* .page-practiceItems\.4\.0 #controls--next-button::after { animation: revealOrange0 0s linear 15s forwards }
 .page-practiceItems\.4\.1 #controls--next-button::after { animation: revealOrange1 0s linear 15s forwards }
 .page-practiceItems\.4\.2 #controls--next-button::after { animation: revealOrange2 0s linear 15s forwards }
-.page-practiceItems\.4\.3 #controls--next-button::after { animation: revealOrange3 0s linear 15s forwards }
+.page-practiceItems\.4\.3 #controls--next-button::after { animation: revealOrange3 0s linear 15s forwards } */
 
 /* Animations (1 for each unique page) */
 @keyframes revealOrange0 { to { opacity: 1 } }
-@keyframes revealOrange1 { to { opacity: 1 } }
+/* @keyframes revealOrange1 { to { opacity: 1 } }
 @keyframes revealOrange2 { to { opacity: 1 } }
-@keyframes revealOrange3 { to { opacity: 1 } }
+@keyframes revealOrange3 { to { opacity: 1 } } */
