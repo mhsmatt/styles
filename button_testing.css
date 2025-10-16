@@ -8,6 +8,7 @@
   height: 43px;
   border: none !important;
   background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png) center no-repeat !important;
+  background-size: 43px !important;
 }
 
 /* Setup for sound button highlight */
@@ -57,10 +58,10 @@
 }
 
 /* Assign additional delay animations */
-.page-practiceItems\.4\.0 #controls--back-button { animation: flashOrange0 0s linear 10s }
-.page-practiceItems\.4\.1 #controls--back-button { animation: flashOrange0 0s linear 10s }
-.page-practiceItems\.4\.2 #controls--back-button { animation: flashOrange0 0s linear 10s }
-.page-practiceItems\.4\.3 #controls--back-button { animation: flashOrange0 0s linear 10s }
+.page-practiceItems\.4\.0 #controls--back-button { animation: flashOrange0 1s linear 10s }
+.page-practiceItems\.4\.1 #controls--back-button { animation: flashOrange0 1s linear 10s }
+.page-practiceItems\.4\.2 #controls--back-button { animation: flashOrange0 1s linear 10s }
+.page-practiceItems\.4\.3 #controls--back-button { animation: flashOrange0 1s linear 10s }
 
 /* Animations (1 for each unique page) */
 @keyframes flashOrange0 { to { opacity: 1 } }
