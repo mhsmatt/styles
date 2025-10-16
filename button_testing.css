@@ -24,5 +24,5 @@
 }
 
 .page-practiceItems\.4\.0 #controls--next-button {
-  animation: highlightOrange 0s forwards 15s;
+  animation: highlightOrange 1s infinite forwards 15s;
 }
