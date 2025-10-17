@@ -75,14 +75,14 @@ body::before {
 .page-practiceItems\.4\.1 #controls--back-button::after { animation: flashOrange1 1s linear 10s }
 .page-practiceItems\.4\.2 #controls--back-button::after { animation: flashOrange2 1s linear 10s }
 .page-practiceItems\.4\.3 #controls--back-button::after { animation: flashOrange3 1s linear 10s }
-.page-practiceItems\.4\.4 #controls--back-button::after { animation: flashOrange3 1s linear 10s }
+.page-practiceItems\.4\.4 #controls--back-button::after { animation: flashOrange4 1s linear 10s }
 
 /* Animations (1 for each unique page) */
-@keyframes flashOrange0 { 0%, 99% { opacity: 1 } }
-@keyframes flashOrange1 { 0%, 99% { opacity: 1 } }
-@keyframes flashOrange2 { 0%, 99% { opacity: 1 } }
-@keyframes flashOrange3 { 0%, 99% { opacity: 1 } }
-@keyframes flashOrange4 { 0%, 99% { opacity: 1 } }
+@keyframes flashOrange0 { to { opacity: 1 } }
+@keyframes flashOrange1 { to { opacity: 1 } }
+@keyframes flashOrange2 { to { opacity: 1 } }
+@keyframes flashOrange3 { to { opacity: 1 } }
+@keyframes flashOrange4 { to { opacity: 1 } }
 
 /* ======================================
               NEXT BUTTON
@@ -128,7 +128,7 @@ body::before {
 .page-practiceItems\.4\.1 #controls--next-button::after { animation: revealOrange1 0s linear 15s forwards }
 .page-practiceItems\.4\.2 #controls--next-button::after { animation: revealOrange2 0s linear 15s forwards }
 .page-practiceItems\.4\.3 #controls--next-button::after { animation: revealOrange3 0s linear 15s forwards }
-.page-practiceItems\.4\.4 #controls--next-button::after { animation: revealOrange3 0s linear 15s forwards }
+.page-practiceItems\.4\.4 #controls--next-button::after { animation: revealOrange4 0s linear 15s forwards }
 
 /* Animations (1 for each unique page) */
 @keyframes revealOrange0 { to { opacity: 1 } }
