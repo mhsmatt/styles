@@ -38,7 +38,6 @@
   opacity: 0;
 }
 
-
 /* Handle hover state */
 [class^="page-practiceItems.4."] #controls--back-button:hover,
 [class^="page-practiceItems.4."] #controls--back-button:hover::after {
@@ -51,20 +50,17 @@
   background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png) center / 43px no-repeat !important;
 }
 
-@keyframes flashOrange { 0%, 99% { opacity: 1 } }
-[class^="page-practiceItems"] #controls--back-button::after { animation: flashOrange 1s linear 10s }
-
 /* Assign additional delay animations */
-/* .page-practiceItems\.4\.0 #controls--back-button::after { animation: flashOrange0 1s linear 10s }
+.page-practiceItems\.4\.0 #controls--back-button::after { animation: flashOrange0 1s linear 10s }
 .page-practiceItems\.4\.1 #controls--back-button::after { animation: flashOrange1 1s linear 10s }
 .page-practiceItems\.4\.2 #controls--back-button::after { animation: flashOrange2 1s linear 10s }
-.page-practiceItems\.4\.3 #controls--back-button::after { animation: flashOrange3 1s linear 10s } */
+.page-practiceItems\.4\.3 #controls--back-button::after { animation: flashOrange3 1s linear 10s }
 
 /* Animations (1 for each unique page) */
-/* @keyframes flashOrange0 { 0%, 99% { opacity: 1 } }
-@keyframes flashOrange1 { 0%, 99% { opacity: 1 } }
-@keyframes flashOrange2 { 0%, 99% { opacity: 1 } }
-@keyframes flashOrange3 { 0%, 99% { opacity: 1 } } */
+@keyframes flashOrange0 { to { opacity: 1 } }
+@keyframes flashOrange1 { to { opacity: 1 } }
+@keyframes flashOrange2 { to { opacity: 1 } }
+@keyframes flashOrange3 { to { opacity: 1 } }
 
 /* ======================================
               NEXT BUTTON
