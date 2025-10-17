@@ -9,6 +9,26 @@
           Common Button Styles 
 ======================================= */
 
+/* Preload all button images to prevent flicker */
+body::before {
+  content: "";
+  position: fixed;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  background:
+    url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png) no-repeat,
+    url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png) no-repeat,
+    url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png) no-repeat,
+    url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png) no-repeat,
+    url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn.png) no-repeat,
+    url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_hover.png) no-repeat,
+    url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_selected.png) no-repeat,
+    url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_orange.png) no-repeat;
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* Hide additional elements within the button (Text and Arrow) */
 [class^="page-practiceItems.4."] #controls--back-button > *,
 [class^="page-practiceItems.4."] #controls--next-button > * {
