@@ -118,10 +118,6 @@ body::before {
 [class^="page-practiceItems.4."] #controls--next-button:active::after {
   background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_selected.png) center no-repeat !important;
 }
-[class^="page-practiceItems.4."] #controls--next-button:active,
-[class^="page-practiceItems.4."] #controls--next-button:active::after {
-  background: url(https://mhsmatt.github.io/styles/images/pvat_item_next_btn_selected.png) center no-repeat !important;
-}
 
 /* Assign additional delay animations */
 .page-practiceItems\.4\.0 #controls--next-button::after { animation: revealOrange0 0s linear 15s forwards }
