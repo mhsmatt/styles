@@ -1,4 +1,4 @@
-@keyframes blink {
+/* @keyframes blink {
     0% {
         opacity: 1;
         font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -89,4 +89,133 @@ p, span, h1, h2, h3, h4, h5, h6, a, label {
     white-space: nowrap;
     display: inline-block;
 }
+ */
 
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    25% {
+        opacity: 0.5;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    50% {
+        opacity: 0;
+        font-family: 'Arial', sans-serif;
+    }
+    75% {
+        opacity: 0.5;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    100% {
+        opacity: 1;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes rotate {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+}
+
+/* Random rotation for all elements */
+@keyframes randomRotation {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-10deg); }
+    40% { transform: rotate(15deg); }
+    60% { transform: rotate(-20deg); }
+    80% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Gravity effect for all elements */
+@keyframes gravity {
+    0% { transform: translateY(0); }
+    10% { transform: translateY(10px); }
+    20% { transform: translateY(20px); }
+    40% { transform: translateY(30px); }
+    50% { transform: translateY(40px); }
+    60% { transform: translateY(30px); }
+    80% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes rainbow {
+    0% { background-color: red; }
+    16% { background-color: orange; }
+    33% { background-color: yellow; }
+    50% { background-color: green; }
+    66% { background-color: blue; }
+    83% { background-color: indigo; }
+    100% { background-color: violet; }
+}
+
+@keyframes randomSize {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+* {
+    background-color: cyan;
+    color: purple;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation:
+        rotate 2s infinite,
+        rainbow 5s linear infinite,
+        randomSize 3s infinite,
+        randomRotation 4s infinite,
+        gravity 2s infinite;
+}
+
+p, span, h1, h2, h3, h4, h5, h6, a, label {
+    animation:
+        blink 1s infinite,
+        scroll 5s linear infinite,
+        rotate 2s infinite,
+        rainbow 5s linear infinite,
+        randomSize 3s infinite,
+        randomRotation 4s infinite,
+        gravity 2s infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+platypus
