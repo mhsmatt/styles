@@ -208,3 +208,29 @@
   width: 150px;
   height: 150px;
 }
+
+.content--toggle-item-option-indicator.radio{
+  display: none;
+}
+
+.content--toggle-item-group .content--toggle-item-option{
+border-color: #000000
+}
+
+.content--toggle-item-inner{
+justify-content: center;
+align-items: center;
+}
+
+.content--toggle-item-inner:focus-visible .content--toggle-item-inner:active .content--toggle-item-inner.toggled{
+color:white
+}
+
+
+.content--toggle-item-group .content--toggle-item-option:focus-visible,
+.content--toggle-item-group .content--toggle-item-option.toggled,
+.content--toggle-item-group .btn-check:focus-visible + label,
+.content--toggle-item-group .content--toggle-item-option:active {
+  background-color: #555B6E !important;
+  border-color: #555B6E !important;
+}
