@@ -40,13 +40,13 @@
   border: none;
   display: inline-block;
   overflow: visible;
-  color: white !important;
-  --nav-btn-bg: #2978bb !important;
-  --nav-btn-bg-hover: #215b8c !important;
-  --nav-btn-bg-disabled: #f6f6f6 !important;
-  background: var(--nav-btn-bg) !important;
+  color: #343434 !important;
+  --nav-btn-bg: #cccccc !important;
+  --nav-btn-bg-hover: #999999 !important;
+  --nav-btn-bg-disabled: #d0d0d0 !important;
+  --nav-btn-bg-highlight: #e8ac21 !important;
+  background: var(--nav-btn-bg);
 }
-
 /* Directional spacing */
 #controls--next-button:not(.modal-content *),
 #controls--start-button:not(.modal-content *) {
@@ -233,4 +233,71 @@ color:white
 .content--toggle-item-group .content--toggle-item-option:active {
   background-color: #555B6E !important;
   border-color: #555B6E !important;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png) no-repeat,
+  url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png) no-repeat,
+  url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png) no-repeat,
+  url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png) no-repeat;
+  pointer-events: none;
+  z-index: -1;
+}
+
+[class^='page-items.3.0'] .audio-controls-container {
+  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png');
+  background-size: cover;
+}
+
+/* Setup for sound button highlight */
+[class^='page-items.3.0'] .audio-controls-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png) center / 42px no-repeat !important;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* Handle hover state */
+[class^='page-items.3.0'] .audio-controls-container:hover,
+[class^='page-items.3.0'] .audio-controls-container:hover::after {
+  background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png) center / 42px no-repeat !important;
+}
+
+/* Handle active state */
+[class^='page-items.3.0'] .audio-controls-container:active,
+[class^='page-items.3.0'] .audio-controls-container:active::after {
+  background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png) center / 42px no-repeat !important;
+}
+
+.page-items\.3\.0 .audio-controls-container::after {
+  animation: flashOrange 1s linear 10s;
+}
+
+@keyframes flashOrange {
+  0%,
+  99% {
+    opacity: 1;
+  }
+}
+
+[class^='page-items.3.0'] #controls #controls--next-button:not(:disabled) {
+  animation: revealOrange 0s linear 15s forwards !important;
+}
+
+[class^='page-items.3.0'] #controls--next-button:not(:disabled)::after {
+  animation: revealOrange 0s linear 15s forwards !important;
+}
+
+@keyframes revealOrange {
+  to {
+    --nav-btn-bg: black !important;
+    background: var(--nav-btn-bg-highlight) !important;
+  }
 }
