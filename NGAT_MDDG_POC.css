@@ -83,7 +83,7 @@ body {
 }
 
 [class*="practice"] #header-progress-panel{
-  color: white;
+  color: white !important;
 }
 
 [class*="practice"] #header {
