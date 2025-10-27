@@ -82,7 +82,8 @@ body {
     color: var(--header-text-color);
 }
 
-[class*="practice"] #header-progress-panel{
+
+[class*="practice"] #header .mobileHeader .col .headerHiddentPanel #header--progress-panel{
   color: white !important;
 }
 
