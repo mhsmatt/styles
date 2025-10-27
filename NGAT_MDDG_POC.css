@@ -82,6 +82,15 @@ body {
     color: var(--header-text-color);
 }
 
+[class*="practice"] #header-progress-panel{
+  color: white;
+}
+
+[class*="practice"] #header {
+  background-color: gray;
+  color: white;
+}
+
   /* Hide the page counter located on the right corner */
   .headerBigPanel #header--progress-panel {
     display: none;
