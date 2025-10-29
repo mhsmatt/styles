@@ -240,6 +240,7 @@ color: #FFFFFF;
 
 .content--response-media{
  border: 1px solid #000000;
+ align-self: auto;
 }
 
 .content--toggle-item-group .content--toggle-item-option:focus-visible .content--response-media,
