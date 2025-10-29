@@ -235,14 +235,18 @@ color: #FFFFFF;
 .content--toggle-item-group .btn-check:focus-visible + label,
 .content--toggle-item-group .content--toggle-item-option:active {
   background-color: #555B6E !important;
+  border-color: #000000 !important;
 }
 
 .content--response-media{
- border: 1px solid #000000
+ border: 1px solid #000000;
 }
 
-.content--response-media:focus-visible, .content--response-media:active, .content--response-media.toggled{
-  border: 1px solid #FFFFFF
+.content--toggle-item-group .content--toggle-item-option:focus-visible .content--response-media,
+.content--toggle-item-group .content--toggle-item-option.toggled .content--response-media,
+.content--toggle-item-group .btn-check:focus-visible + label .content--response-media,
+.content--toggle-item-group .content--toggle-item-option:active .content--response-media{
+  border-color: #FFFFFF;
 }
 
 
