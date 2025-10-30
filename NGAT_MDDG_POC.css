@@ -186,6 +186,21 @@ body {
   width: auto;
 }
 
+.page-ending\.10 .content--markup-text{
+  display: none;
+}
+
+.page-ending-complete\.11 .content--markup-text{
+  font-size: 51px;
+  font-weight: bold;
+  color: var(--header-text-color);
+}
+
+.page-ending-complete\.11 > div > div > div > div > div >  div > img{
+  width: 60px ;
+  height: 60px ;
+}
+
 .button-chevron {
   display: none;
 }
