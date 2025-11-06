@@ -6,6 +6,8 @@
   --button-height: 77px;
   --submit-button-width: 124px;
   --submit-button-height: 88px;
+  --hdr-pad-y: 16px;   /* header top */
+  --hdr-pad-x: 10px;   /* left/right padding */
 }
 
 #controls--next-button, #controls--start-button, #controls--redirect-button{
@@ -111,10 +113,9 @@ body {
 }
 
 #header { 
-    background: transparent;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 16px;
+  background: transparent;
+  position: relative;
+  padding: var(--hdr-pad-y) var(--hdr-pad-x);
 }
 
 .content--item-group-wrapper {
@@ -203,6 +204,16 @@ body {
 
 .button-chevron {
   display: none;
+}
+
+/* ===== Page description anchored to header corner ===== */
+.content--page-description .content--item-group-wrapper {
+  position: absolute !important;
+  top: var(--hdr-pad-y) !important;
+  left: var(--hdr-pad-x) !important;
+  color: white;
+  padding: 0 12px 0 12px;
+  font-weight: bold;
 }
 
 @keyframes enableBtn {
