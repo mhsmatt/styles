@@ -161,10 +161,10 @@ body {
 
 .page-review\.9 .btn-center-stack {
   align-items: center;
-  width: 50%;
+  width: 75%;
   top: 50%;
   left: 0;
-  transform: translate(50%, -50%);
+  transform: translate(10%, -50%);
   position: absolute;
 }
 
