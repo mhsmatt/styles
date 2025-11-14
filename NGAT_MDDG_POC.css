@@ -87,6 +87,7 @@ body {
 #header--progress-panel {
     font-size: 16pt;
     color: var(--header-text-color);
+    font-style: normal;
 }
 
 
