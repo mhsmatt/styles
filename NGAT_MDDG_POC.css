@@ -275,6 +275,10 @@ body {
     background-position: center;
 }
 
+.video-controls-container {
+  display: none;
+}
+
 .bi-play-circle-fill {
   display: none;
 }
