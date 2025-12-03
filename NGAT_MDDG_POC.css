@@ -63,6 +63,10 @@
   position: relative;
 }
 
+.page-pause\.-1 .content--markup-text {
+    font-size: 21px !important;
+}
+
 .content--toggle-item-group .content--toggle-item-option {
   background-color: white;
   padding: 8px 8px !important;
@@ -85,7 +89,8 @@ body {
 }
 
 #header--progress-panel {
-    font-size: 16pt;
+    font-size: 21px !important;
+    font-weight: 700;
     color: var(--header-text-color);
     font-style: normal;
 }
@@ -197,7 +202,7 @@ body {
 }
 
 .page-ending-complete\.11 .content--markup-text{
-  font-size: 51px;
+  font-size: 21px;
   font-weight: bold;
   color: var(--header-text-color);
 }
@@ -252,6 +257,11 @@ body {
   text-align: center;
 }
 
+/* Set all content in options to 18px font size */
+.content--toggle-item-inner > * {
+    font-size: 18px !important;
+}
+
 .content--toggle-item-option-indicator.radio{
   display: none;
 }
@@ -293,4 +303,13 @@ body {
 .page-instructions\.2\.0 > #content > div > div:nth-child(1) > img {
   max-width: 1200px;
   width: 100%;
+}
+
+/* Font Sizing */
+
+/* Demographics */
+.content--item-form-group label,
+.content--item-form-group input,
+.content--item-form-group label > * {
+    font-size: 18px !important;
 }
