@@ -63,6 +63,10 @@
   position: relative;
 }
 
+.page-pause\.-1 .content--markup-text {
+    font-size: 21px !important;
+}
+
 .content--toggle-item-group .content--toggle-item-option {
   background-color: white;
   padding: 8px 8px !important;
@@ -198,7 +202,7 @@ body {
 }
 
 .page-ending-complete\.11 .content--markup-text{
-  font-size: 51px;
+  font-size: 21px;
   font-weight: bold;
   color: var(--header-text-color);
 }
