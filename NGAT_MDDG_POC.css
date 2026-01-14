@@ -4,10 +4,10 @@
   --header-text-color: #221f1f;
   --button-width: 100px;
   --button-height: 77px;
-  --submit-button-width: 188px; /* larger submit button */
-  --submit-button-height: 136px; /* larger submit button */
-  --hdr-pad-y: 16px;   /* header top */
-  --hdr-pad-x: 10px;   /* left/right padding */
+  --submit-button-width: 188px;
+  --submit-button-height: 136px;
+  --hdr-pad-y: 16px;
+  --hdr-pad-x: 10px;
 }
 
 #controls--next-button, #controls--start-button, #controls--redirect-button{
@@ -217,13 +217,15 @@ body {
 }
 
 /* ===== Page description anchored to header corner ===== */
-.content--page-description .content--item-group-wrapper {
+.content--page-description {
   position: absolute !important;
-  top: var(--hdr-pad-y) !important;
-  left: var(--hdr-pad-x) !important;
+  top: 0 !important;
+  left: 0 !important;
   color: white;
-  padding: 0 12px 0 12px;
+  padding: var(--hdr-pad-y) calc(var(--hdr-pad-x) + var(--bs-gutter-x) / 2) !important;
   font-weight: bold;
+  margin-bottom: 0;
+  width: auto;
 }
 
 @keyframes enableBtn {
@@ -313,3 +315,12 @@ body {
 .content--item-form-group label > * {
     font-size: 18px !important;
 }
+
+#controls {
+  padding-bottom: 1.5rem;
+}
+
+#content {
+  padding: 1rem 10%;
+}
+
