@@ -10,30 +10,44 @@
   --hdr-pad-x: 10px;
 }
 
-#controls--next-button, #controls--start-button, #controls--redirect-button{
+#controls--next-button,
+#controls--start-button,
+#controls--redirect-button {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   width: var(--button-width);
   height: var(--button-height);
   border: none;
   color: transparent !important;
-  background-color:transparent !important;
+  background-color: transparent !important;
   float: right;
 }
 
 .content--toggle-item-option:hover {
-    background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
 }
 
 .page-preTasks\.6 #controls--next-button {
-  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png")
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png");
 }
 
 .page-review\.9 #controls--next-button {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
   width: var(--submit-button-width);
   height: var(--submit-button-height);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 3rem;
+}
+
+.page-review\.9 #controls--back-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 3rem;
 }
 
 .content--toggle-wrapper {
@@ -41,17 +55,17 @@
 }
 
 .page-student-info\.2\.0 #content .col:first-of-type {
-    border: 1px solid var(--border-color) !important;
-    padding: 50px 50px !important;
+  border: 1px solid var(--border-color) !important;
+  padding: 50px 50px !important;
 }
 
 .content--text-input.form-control {
-    background-color: unset;
-    font-weight: bold;
+  background-color: unset;
+  font-weight: bold;
 }
 
 .content--toggle-item-group {
-  background-color: unset !important; 
+  background-color: unset !important;
 }
 
 #root {
@@ -64,7 +78,7 @@
 }
 
 .page-pause\.-1 .content--markup-text {
-    font-size: 21px !important;
+  font-size: 21px !important;
 }
 
 .content--toggle-item-group .content--toggle-item-option {
@@ -76,8 +90,8 @@
 .content--toggle-item-group .content--toggle-item-option.toggled,
 .content--toggle-item-group .btn-check:focus-visible + label,
 .content--toggle-item-group .content--toggle-item-option:active {
-  background-color: #555B6E !important;
-  border-color: #555B6E !important;
+  background-color: #555b6e !important;
+  border-color: #555b6e !important;
 }
 
 #controls--next-button:disabled {
@@ -89,14 +103,13 @@ body {
 }
 
 #header--progress-panel {
-    font-size: 21px !important;
-    font-weight: 700;
-    color: var(--header-text-color);
-    font-style: normal;
+  font-size: 21px !important;
+  font-weight: 700;
+  color: var(--header-text-color);
+  font-style: normal;
 }
 
-
-[class*="practice"] #header--progress-panel{
+[class*="practice"] #header--progress-panel {
   color: white !important;
 }
 
@@ -105,10 +118,10 @@ body {
   color: white;
 }
 
-  /* Hide the page counter located on the right corner */
-  .headerBigPanel #header--progress-panel {
-    display: none;
-  }
+/* Hide the page counter located on the right corner */
+.headerBigPanel #header--progress-panel {
+  display: none;
+}
 
 /* Align the header elements */
 .headerHiddentPanel {
@@ -116,23 +129,25 @@ body {
 }
 
 .mobileHeader {
-    display: flex;
-  }
-
-.content--response-media {
-    align-self: auto;
+  display: flex;
 }
 
-#header { 
+.content--response-media {
+  align-self: auto;
+}
+
+#header {
   background: transparent;
   padding: var(--hdr-pad-y) var(--hdr-pad-x);
 }
 
 .content--item-group-wrapper {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 
-#controls--next-button:hover, #controls--start-button:hover, #controls--redirect-button:hover {
+#controls--next-button:hover,
+#controls--start-button:hover,
+#controls--redirect-button:hover {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
 }
 
@@ -150,13 +165,13 @@ body {
 
 #controls--back-button {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_1x.png");
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   width: var(--button-width);
   height: var(--button-height);
   border: none;
   color: transparent !important;
-  background-color:transparent !important;
+  background-color: transparent !important;
 }
 
 .btn-center-stack {
@@ -166,16 +181,15 @@ body {
 }
 
 .page-review\.9 .btn-center-stack {
-  align-items: center;
-  width: 50%;
-  top: 50%;
-  left: 0;
-  transform: translate(50%, -50%);
   position: absolute;
+  inset: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.btn-center-stack #controls--next-button:only-child,.btn-center-stack #controls--start-button:only-child {
-    margin-left: auto;
+.btn-center-stack #controls--next-button:only-child,
+.btn-center-stack #controls--start-button:only-child {
+  margin-left: auto;
 }
 
 .btn-center-stack #controls--redirect-button:only-child {
@@ -197,19 +211,19 @@ body {
   width: auto;
 }
 
-.page-ending\.10 .content--markup-text{
+.page-ending\.10 .content--markup-text {
   display: none;
 }
 
-.page-ending-complete\.11 .content--markup-text{
+.page-ending-complete\.11 .content--markup-text {
   font-size: 21px;
   font-weight: bold;
   color: var(--header-text-color);
 }
 
-.page-ending-complete\.11 > div > div > div > div > div >  div > img{
-  width: 60px ;
-  height: 60px ;
+.page-ending-complete\.11 > div > div > div > div > div > div > img {
+  width: 60px;
+  height: 60px;
 }
 
 .button-chevron {
@@ -230,9 +244,9 @@ body {
 
 @keyframes enableBtn {
   to {
-      opacity: 1;
-      pointer-events: auto;
-      cursor: pointer;
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
   }
 }
 
@@ -254,20 +268,20 @@ body {
   max-height: 69.62704px;
 }
 
-[class*="quant"] .content--toggle-item-inner div,[class*="nonverbal"] .content--toggle-item-inner div {
+[class*="quant"] .content--toggle-item-inner div,
+[class*="nonverbal"] .content--toggle-item-inner div {
   width: 100%;
   text-align: center;
 }
 
 /* Set all content in options to 18px font size */
 .content--toggle-item-inner > * {
-    font-size: 18px !important;
+  font-size: 18px !important;
 }
 
-.content--toggle-item-option-indicator.radio{
+.content--toggle-item-option-indicator.radio {
   display: none;
 }
-
 
 #content > div > div > div > div > img {
   width: 75%;
@@ -278,14 +292,14 @@ body {
 }
 
 .video-container {
-  width:70%;
+  width: 70%;
   max-width: 800px;
 }
 
 .play-button-overlay {
-    background-image: url(https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__playbutton_1x.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__playbutton_1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .video-controls-container {
@@ -313,7 +327,7 @@ body {
 .content--item-form-group label,
 .content--item-form-group input,
 .content--item-form-group label > * {
-    font-size: 18px !important;
+  font-size: 18px !important;
 }
 
 #controls {
@@ -323,4 +337,3 @@ body {
 #content {
   padding: 1rem 10%;
 }
-
