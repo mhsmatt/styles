@@ -1,6 +1,5 @@
-
-.timers-container{
-  display:none
+.timers-container {
+  display: none;
 }
 
 .btn-center-stack {
@@ -47,6 +46,7 @@
   --nav-btn-bg-highlight: #e8ac21 !important;
   background: var(--nav-btn-bg);
 }
+
 /* Directional spacing */
 #controls--next-button:not(.modal-content *),
 #controls--start-button:not(.modal-content *) {
@@ -161,13 +161,13 @@
   transform: translateX(-50%);
   z-index: 10;
   top: 100%;
-  background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg");
+  background: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg');
   width: 42px;
   height: 42px;
 }
 
 .audio-controls-container.audio-active {
-  background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg");
+  background: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg');
 }
 
 .audio-controls {
@@ -180,6 +180,7 @@
 
 #content {
   position: relative;
+  min-height: 0;
 }
 
 .page-instructions\.2 .audio-controls-container {
@@ -209,47 +210,65 @@
   height: 150px;
 }
 
-.content--toggle-item-option-indicator.radio{
+.content--toggle-item-option-indicator.radio {
   display: none;
 }
 
-.content--toggle-item-group .content--toggle-item-option{
-border: 1px solid #000000;
-padding: 8px 8px 0 8px !important;
+.content--toggle-item-group .content--toggle-item-option {
+  border: 1px solid #000000;
+  padding: 8px 8px 0 8px !important;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.content--toggle-item-inner{
-justify-content: center;
-align-items: center;
-font-weight: 600;
-padding: 8px 0 8px 0;
+.content--toggle-item-inner {
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 8px 0 8px 0;
 }
 
-.content--toggle-item-inner:focus-visible, .content--toggle-item-inner:active, .content--toggle-item-inner.toggled{
-color: #FFFFFF;
+.content--toggle-item-inner:focus-visible,
+.content--toggle-item-inner:active,
+.content--toggle-item-inner.toggled {
+  color: #ffffff;
 }
-
 
 .content--toggle-item-group .content--toggle-item-option:focus-visible,
 .content--toggle-item-group .content--toggle-item-option.toggled,
 .content--toggle-item-group .btn-check:focus-visible + label,
 .content--toggle-item-group .content--toggle-item-option:active {
-  background-color: #555B6E !important;
+  background-color: #555b6e !important;
   border-color: #000000 !important;
 }
 
-.content--response-media{
- border: 1px solid #000000;
- align-self: auto;
+.content--response-media {
+  border: 1px solid #000000;
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-.content--toggle-item-group .content--toggle-item-option:focus-visible .content--response-media,
-.content--toggle-item-group .content--toggle-item-option.toggled .content--response-media,
-.content--toggle-item-group .btn-check:focus-visible + label .content--response-media,
-.content--toggle-item-group .content--toggle-item-option:active .content--response-media{
-  border-color: #FFFFFF;
+.content--toggle-item-group
+.content--toggle-item-option:focus-visible
+.content--response-media,
+.content--toggle-item-group
+.content--toggle-item-option.toggled
+.content--response-media,
+.content--toggle-item-group
+.btn-check:focus-visible
++ label
+.content--response-media,
+.content--toggle-item-group
+.content--toggle-item-option:active
+.content--response-media {
+  border-color: #ffffff;
 }
-
 
 body::before {
   content: '';
@@ -257,10 +276,15 @@ body::before {
   top: -9999px;
   width: 0;
   height: 0;
-  background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png) no-repeat,
-  url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png) no-repeat,
-  url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png) no-repeat,
-  url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png) no-repeat;
+  background:
+          url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png')
+          no-repeat,
+          url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png')
+          no-repeat,
+          url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png')
+          no-repeat,
+          url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png')
+          no-repeat;
   pointer-events: none;
   z-index: -1;
 }
@@ -275,7 +299,8 @@ body::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png) center / 42px no-repeat !important;
+  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png')
+  center / 42px no-repeat !important;
   pointer-events: none;
   opacity: 0;
 }
@@ -283,13 +308,15 @@ body::before {
 /* Handle hover state */
 [class^='page-items.3.0'] .audio-controls-container:hover,
 [class^='page-items.3.0'] .audio-controls-container:hover::after {
-  background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png) center / 42px no-repeat !important;
+  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png')
+  center / 42px no-repeat !important;
 }
 
 /* Handle active state */
 [class^='page-items.3.0'] .audio-controls-container:active,
 [class^='page-items.3.0'] .audio-controls-container:active::after {
-  background: url(https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png) center / 42px no-repeat !important;
+  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png')
+  center / 42px no-repeat !important;
 }
 
 .page-items\.3\.0 .audio-controls-container::after {
@@ -316,4 +343,32 @@ body::before {
     --nav-btn-bg: black !important;
     background: var(--nav-btn-bg-highlight) !important;
   }
+}
+
+#page {
+  grid-template:
+    'header' auto
+    'content' 1fr
+    'controls' auto
+    'footer' auto;
+}
+
+#content > .col,
+.content--toggle-wrapper {
+  min-height: 0;
+  max-height: 100%;
+}
+
+.content--item-group,
+.content--item-group-wrapper,
+main > #content > .col > div {
+  height: 100%;
+}
+
+.content--toggle-item-group {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+  align-content: stretch;
+  grid-auto-rows: 1fr;
 }
