@@ -359,11 +359,6 @@ body::before {
   max-height: 100%;
 }
 
-.content--item-group,
-.content--item-group-wrapper,
-main > #content > .col > div {
-  height: 100%;
-}
 
 .content--toggle-item-group {
   flex: 1 1 auto;
