@@ -76,7 +76,7 @@
 /* Forward (right-pointing) wedge */
 #controls--next-button:not(.modal-content *)::after,
 #controls--start-button:not(.modal-content *)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -0.3px;
   left: calc(100% + -0.5px);
@@ -99,7 +99,7 @@
 
 /* Back (left-pointing) wedge */
 #controls--back-button:not(.modal-content *)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -0.3px;
   right: calc(100% + -0.5px);
@@ -121,7 +121,7 @@
 /* Inner chevrons */
 #controls--next-button:not(.modal-content *)::before,
 #controls--start-button:not(.modal-content *)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0.5rem;
@@ -135,7 +135,7 @@
 }
 
 #controls--back-button:not(.modal-content *)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0.5rem;
@@ -161,13 +161,13 @@
   transform: translateX(-50%);
   z-index: 10;
   top: 100%;
-  background: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg');
+  background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg");
   width: 42px;
   height: 42px;
 }
 
 .audio-controls-container.audio-active {
-  background: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg');
+  background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg");
 }
 
 .audio-controls {
@@ -187,7 +187,7 @@
   left: unset;
   transform: unset;
   top: unset;
-  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn.png');
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn.png");
   background-size: cover;
   width: 150px;
   height: 150px;
@@ -195,12 +195,12 @@
 }
 
 .page-instructions\.2 .audio-controls-container:hover {
-  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_hover.png');
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_hover.png");
   background-size: cover;
 }
 
 .page-instructions\.2 .audio-controls-container.audio-active {
-  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_selected.png');
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_selected.png");
   background-size: cover;
 }
 
@@ -216,11 +216,6 @@
 .content--toggle-item-group .content--toggle-item-option {
   border: 1px solid #000000;
   padding: 8px 8px 0 8px !important;
-  min-height: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .content--toggle-item-inner {
@@ -246,76 +241,71 @@
 
 .content--response-media {
   border: 1px solid #000000;
-  flex: 1 1 auto;
-  min-height: 0;
-  max-height: 100%;
-  object-fit: contain;
-  display: block;
 }
 
 .content--toggle-item-group
-.content--toggle-item-option:focus-visible
-.content--response-media,
+  .content--toggle-item-option:focus-visible
+  .content--response-media,
 .content--toggle-item-group
-.content--toggle-item-option.toggled
-.content--response-media,
+  .content--toggle-item-option.toggled
+  .content--response-media,
 .content--toggle-item-group
-.btn-check:focus-visible
-+ label
-.content--response-media,
+  .btn-check:focus-visible
+  + label
+  .content--response-media,
 .content--toggle-item-group
-.content--toggle-item-option:active
-.content--response-media {
+  .content--toggle-item-option:active
+  .content--response-media {
   border-color: #ffffff;
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: -9999px;
   width: 0;
   height: 0;
   background:
-          url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png')
-          no-repeat,
-          url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png')
-          no-repeat,
-          url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png')
-          no-repeat,
-          url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png')
-          no-repeat;
+    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png")
+      no-repeat,
+    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png")
+      no-repeat,
+    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png")
+      no-repeat,
+    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png")
+      no-repeat;
   pointer-events: none;
   z-index: -1;
 }
 
-[class^='page-items.3.0'] .audio-controls-container {
-  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png');
+[class^="page-items.3.0"] .audio-controls-container {
+  background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png");
   background-size: cover;
 }
 
 /* Setup for sound button highlight */
-[class^='page-items.3.0'] .audio-controls-container::after {
-  content: '';
+[class^="page-items.3.0"] .audio-controls-container::after {
+  content: "";
   position: absolute;
   inset: 0;
-  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png')
-  center / 42px no-repeat !important;
+  background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png")
+    center / 42px no-repeat !important;
   pointer-events: none;
   opacity: 0;
 }
 
 /* Handle hover state */
-[class^='page-items.3.0'] .audio-controls-container:hover,
-[class^='page-items.3.0'] .audio-controls-container:hover::after {
-  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png')
-  center / 42px no-repeat !important;
+[class^="page-items.3.0"] .audio-controls-container:hover,
+[class^="page-items.3.0"] .audio-controls-container:hover::after {
+  background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png")
+    center / 42px no-repeat !important;
 }
 
 /* Handle active state */
-[class^='page-items.3.0'] .audio-controls-container:active,
-[class^='page-items.3.0'] .audio-controls-container:active::after {
-  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png')
-  center / 42px no-repeat !important;
+[class^="page-items.3.0"] .audio-controls-container:active,
+[class^="page-items.3.0"] .audio-controls-container:active::after {
+  background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png")
+    center / 42px no-repeat !important;
 }
 
 .page-items\.3\.0 .audio-controls-container::after {
@@ -329,11 +319,11 @@ body::before {
   }
 }
 
-[class^='page-items.3.0'] #controls #controls--next-button:not(:disabled) {
+[class^="page-items.3.0"] #controls #controls--next-button:not(:disabled) {
   animation: revealOrange 0s linear 15s forwards !important;
 }
 
-[class^='page-items.3.0'] #controls--next-button:not(:disabled)::after {
+[class^="page-items.3.0"] #controls--next-button:not(:disabled)::after {
   animation: revealOrange 0s linear 15s forwards !important;
 }
 
@@ -344,24 +334,45 @@ body::before {
   }
 }
 
-#page {
-  grid-template:
-    'header' auto
-    'content' 1fr
-    'controls' auto
-    'footer' auto;
-}
-
-#content > .col,
-.content--toggle-wrapper {
-  max-height: 100%;
-}
-
-
-.content--toggle-item-group {
-  flex: 1 1 auto;
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) #content > .col {
   min-height: 0;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) #content,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  #content
+  > .col
+  > div,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-group,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--response-media,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-group
+  .content--toggle-item-option {
+  min-height: 0;
+}
+
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--item-group,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--item-group-wrapper,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-wrapper,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  > #content
+  > .col
+  > div:last-child {
   height: 100%;
-  align-content: stretch;
-  grid-auto-rows: 1fr;
+  min-height: 0;
+}
+
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--item-group-wrapper.stacked {
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
