@@ -31,10 +31,12 @@
   }
 }
 
-/* Unified Navigation Buttons (Next / Start / Back) */
+/* Unified Navigation Buttons (Next / Start / Back / More Practice / End Session) */
 #controls--next-button:not(.modal-content *),
 #controls--start-button:not(.modal-content *),
-#controls--back-button:not(.modal-content *) {
+#controls--back-button:not(.modal-content *) 
+#controls--more-practice-button:not(.modal-content *),
+#controls--end-session-button:not(.modal-content *) {
   position: relative;
   border: none;
   display: inline-block;
@@ -54,7 +56,9 @@
   padding-right: 2rem !important;
 }
 
-#controls--back-button:not(.modal-content *) {
+#controls--back-button:not(.modal-content *) 
+#controls--more-practice-button:not(.modal-content *),
+#controls--end-session-button:not(.modal-content *) {
   margin-left: 21px;
   padding-left: 2rem !important;
 }
@@ -62,14 +66,18 @@
 /* Hover */
 #controls--next-button:not(.modal-content *):hover,
 #controls--start-button:not(.modal-content *):hover,
-#controls--back-button:not(.modal-content *):hover {
+#controls--back-button:not(.modal-content *):hover
+#controls--more-practice-button:not(.modal-content *):hover,
+#controls--end-session-button:not(.modal-content *):hover {
   background: var(--nav-btn-bg-hover) !important;
 }
 
 /* Disabled */
 #controls--next-button:not(.modal-content *):disabled,
 #controls--start-button:not(.modal-content *):disabled,
-#controls--back-button:not(.modal-content *):disabled {
+#controls--back-button:not(.modal-content *):disabled,
+#controls--more-practice-button:not(.modal-content *):disabled,
+#controls--end-session-button:not(.modal-content *):disabled {
   background: var(--nav-btn-bg-disabled) !important;
 }
 
@@ -98,7 +106,9 @@
 }
 
 /* Back (left-pointing) wedge */
-#controls--back-button:not(.modal-content *)::after {
+#controls--back-button:not(.modal-content *)::after,
+#controls--more-practice-button:not(.modal-content *)::after,
+#controls--end-session-button:not(.modal-content *)::after {
   content: "";
   position: absolute;
   top: -0.3px;
@@ -110,11 +120,15 @@
   clip-path: polygon(100% 0, 0 50%, 100% 100%);
 }
 
-#controls--back-button:not(.modal-content *):hover::after {
+#controls--back-button:not(.modal-content *):hover::after,
+#controls--more-practice-button:not(.modal-content *):hover::after,
+#controls--end-session-button:not(.modal-content *):hover::after {
   background: var(--nav-btn-bg-hover) !important;
 }
 
-#controls--back-button:not(.modal-content *):disabled::after {
+#controls--back-button:not(.modal-content *):disabled::after,
+#controls--more-practice-button:not(.modal-content *):disabled::after,
+#controls--end-session-button:not(.modal-content *):disabled::after {
   background: var(--nav-btn-bg-disabled) !important;
 }
 
@@ -134,7 +148,9 @@
   z-index: 1;
 }
 
-#controls--back-button:not(.modal-content *)::before {
+#controls--back-button:not(.modal-content *)::before,
+#controls--more-practice-button:not(.modal-content *)::before,
+#controls--end-session-button:not(.modal-content *)::before {
   content: "";
   position: absolute;
   top: 0;
@@ -151,7 +167,9 @@
 /* Hide embedded SVG icons for custom shape */
 #controls--next-button:not(.modal-content *) svg,
 #controls--start-button:not(.modal-content *) svg,
-#controls--back-button:not(.modal-content *) svg {
+#controls--back-button:not(.modal-content *) svg,
+#controls--more-practice-button:not(.modal-content *) svg,
+#controls--end-session-button:not(.modal-content *) sv {
   display: none;
 }
 
@@ -182,7 +200,7 @@
   position: relative;
 }
 
-.page-instructions\.2 .audio-controls-container {
+.page-practiceBegin1\.6 .audio-controls-container {
   position: static;
   left: unset;
   transform: unset;
@@ -194,47 +212,47 @@
   margin: 0 auto;
 }
 
-.page-instructions\.2 .audio-controls-container:hover {
+.page-practiceBegin1\.6 .audio-controls-container:hover {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_hover.png");
   background-size: cover;
 }
 
-.page-instructions\.2 .audio-controls-container.audio-active {
+.page-practiceBegin1\.6 .audio-controls-container.audio-active {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_selected.png");
   background-size: cover;
 }
 
-.page-instructions\.2 .audio-controls button {
+.page-practiceBegin1\.6 .audio-controls button {
   width: 150px;
   height: 150px;
 }
 
-.content--toggle-item-option-indicator.radio {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-option-indicator.radio {
   display: none;
 }
 
-.content--toggle-item-group .content--toggle-item-option {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .content--toggle-item-option {
   border: 1px solid #000000;
   padding: 8px 8px 0 8px !important;
 }
 
-.content--toggle-item-inner {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-inner {
   justify-content: center;
   align-items: center;
   font-weight: 600;
   padding: 8px 0 8px 0;
 }
 
-.content--toggle-item-inner:focus-visible,
-.content--toggle-item-inner:active,
-.content--toggle-item-inner.toggled {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-inner:focus-visible,
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-inner:active,
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-inner.toggled {
   color: #ffffff;
 }
 
-.content--toggle-item-group .content--toggle-item-option:focus-visible,
-.content--toggle-item-group .content--toggle-item-option.toggled,
-.content--toggle-item-group .btn-check:focus-visible + label,
-.content--toggle-item-group .content--toggle-item-option:active {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .content--toggle-item-option:focus-visible,
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .content--toggle-item-option.toggled,
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .btn-check:focus-visible + label,
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .content--toggle-item-option:active {
   background-color: #555b6e !important;
   border-color: #000000 !important;
 }
@@ -278,13 +296,13 @@ body::before {
   z-index: -1;
 }
 
-[class^="page-items.3.0"] .audio-controls-container {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container {
   background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png");
   background-size: cover;
 }
 
 /* Setup for sound button highlight */
-[class^="page-items.3.0"] .audio-controls-container::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -295,20 +313,20 @@ body::before {
 }
 
 /* Handle hover state */
-[class^="page-items.3.0"] .audio-controls-container:hover,
-[class^="page-items.3.0"] .audio-controls-container:hover::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container:hover,
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container:hover::after {
   background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png")
     center / 42px no-repeat !important;
 }
 
 /* Handle active state */
-[class^="page-items.3.0"] .audio-controls-container:active,
-[class^="page-items.3.0"] .audio-controls-container:active::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container:active,
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container:active::after {
   background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png")
     center / 42px no-repeat !important;
 }
 
-.page-items\.3\.0 .audio-controls-container::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container::after {
   animation: flashOrange 1s linear 10s;
 }
 
@@ -319,11 +337,11 @@ body::before {
   }
 }
 
-[class^="page-items.3.0"] #controls #controls--next-button:not(:disabled) {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) #controls #controls--next-button:not(:disabled) {
   animation: revealOrange 0s linear 15s forwards !important;
 }
 
-[class^="page-items.3.0"] #controls--next-button:not(:disabled)::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"]) #controls--next-button:not(:disabled)::after {
   animation: revealOrange 0s linear 15s forwards !important;
 }
 
