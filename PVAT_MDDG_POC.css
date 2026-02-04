@@ -34,8 +34,8 @@
 /* Unified Navigation Buttons (Next / Start / Back / More Practice / End Session) */
 #controls--next-button:not(.modal-content *),
 #controls--start-button:not(.modal-content *),
-#controls--back-button:not(.modal-content *) 
-#controls--more-practice-button:not(.modal-content *),
+#controls--back-button:not(.modal-content *)
+  #controls--more-practice-button:not(.modal-content *),
 #controls--end-session-button:not(.modal-content *) {
   position: relative;
   border: none;
@@ -56,8 +56,8 @@
   padding-right: 2rem !important;
 }
 
-#controls--back-button:not(.modal-content *) 
-#controls--more-practice-button:not(.modal-content *),
+#controls--back-button:not(.modal-content *)
+  #controls--more-practice-button:not(.modal-content *),
 #controls--end-session-button:not(.modal-content *) {
   margin-left: 21px;
   padding-left: 2rem !important;
@@ -67,7 +67,7 @@
 #controls--next-button:not(.modal-content *):hover,
 #controls--start-button:not(.modal-content *):hover,
 #controls--back-button:not(.modal-content *):hover
-#controls--more-practice-button:not(.modal-content *):hover,
+  #controls--more-practice-button:not(.modal-content *):hover,
 #controls--end-session-button:not(.modal-content *):hover {
   background: var(--nav-btn-bg-hover) !important;
 }
@@ -179,16 +179,19 @@
   transform: translateX(-50%);
   z-index: 10;
   top: 100%;
+}
+
+.audio-controls-container button {
   background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg");
   width: 42px;
   height: 42px;
 }
 
-.audio-controls-container.audio-active {
+.audio-controls-container.audio-active button {
   background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg");
 }
 
-.audio-controls {
+.audio-controls-container svg {
   opacity: 0;
 }
 
@@ -200,24 +203,37 @@
   position: relative;
 }
 
+.page-practiceBegin1\.6 .audio-controls-container button {
+  width: 150px;
+  height: 150px;
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn.png");
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.audio-controls-container button:focus-visible {
+  outline-offset: 3px;
+}
+
+.page-practiceBegin1\.6 .audio-controls-container svg {
+  display: none;
+}
+
 .page-practiceBegin1\.6 .audio-controls-container {
   position: static;
   left: unset;
   transform: unset;
   top: unset;
-  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn.png");
-  background-size: cover;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
+  margin: 0.5rem;
 }
 
-.page-practiceBegin1\.6 .audio-controls-container:hover {
+.page-practiceBegin1\.6 .audio-controls-container button:hover,
+.page-practiceBegin1\.6 .audio-controls-container button:focus-visible {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_hover.png");
   background-size: cover;
 }
 
-.page-practiceBegin1\.6 .audio-controls-container.audio-active {
+.page-practiceBegin1\.6 .audio-controls-container.audio-active button {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_selected.png");
   background-size: cover;
 }
@@ -227,32 +243,48 @@
   height: 150px;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-option-indicator.radio {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-option-indicator.radio {
   display: none;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .content--toggle-item-option {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-group
+  .content--toggle-item-option {
   border: 1px solid #000000;
   padding: 8px 8px 0 8px !important;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-inner {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-inner {
   justify-content: center;
   align-items: center;
   font-weight: 600;
   padding: 8px 0 8px 0;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-inner:focus-visible,
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-inner:active,
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-inner.toggled {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-inner:focus-visible,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-inner:active,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-inner.toggled {
   color: #ffffff;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .content--toggle-item-option:focus-visible,
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .content--toggle-item-option.toggled,
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .btn-check:focus-visible + label,
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .content--toggle-item-group .content--toggle-item-option:active {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-group
+  .content--toggle-item-option:focus-visible,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-group
+  .content--toggle-item-option.toggled,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-group
+  .btn-check:focus-visible
+  + label,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--toggle-item-group
+  .content--toggle-item-option:active {
   background-color: #555b6e !important;
   border-color: #000000 !important;
 }
@@ -296,13 +328,17 @@ body::before {
   z-index: -1;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .audio-controls-container
+  button {
   background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png");
   background-size: cover;
 }
 
 /* Setup for sound button highlight */
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .audio-controls-container
+  button::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -313,20 +349,30 @@ body::before {
 }
 
 /* Handle hover state */
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container:hover,
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container:hover::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .audio-controls-container
+  button:hover,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .audio-controls-container
+  button:hover::after {
   background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png")
     center / 42px no-repeat !important;
 }
 
 /* Handle active state */
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container:active,
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container:active::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .audio-controls-container
+  button:active,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .audio-controls-container
+  button:active::after {
   background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png")
     center / 42px no-repeat !important;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) .audio-controls-container::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .audio-controls-container
+  button::after {
   animation: flashOrange 1s linear 10s;
 }
 
@@ -337,11 +383,14 @@ body::before {
   }
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) #controls #controls--next-button:not(:disabled) {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  #controls
+  #controls--next-button:not(:disabled) {
   animation: revealOrange 0s linear 15s forwards !important;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-Form"]) #controls--next-button:not(:disabled)::after {
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  #controls--next-button:not(:disabled)::after {
   animation: revealOrange 0s linear 15s forwards !important;
 }
 
