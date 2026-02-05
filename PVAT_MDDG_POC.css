@@ -34,8 +34,8 @@
 /* Unified Navigation Buttons (Next / Start / Back / More Practice / End Session) */
 #controls--next-button:not(.modal-content *),
 #controls--start-button:not(.modal-content *),
-#controls--back-button:not(.modal-content *)
-  #controls--more-practice-button:not(.modal-content *),
+#controls--back-button:not(.modal-content *),
+#controls--more-practice-button:not(.modal-content *),
 #controls--end-session-button:not(.modal-content *) {
   position: relative;
   border: none;
@@ -56,8 +56,8 @@
   padding-right: 2rem !important;
 }
 
-#controls--back-button:not(.modal-content *)
-  #controls--more-practice-button:not(.modal-content *),
+#controls--back-button:not(.modal-content *),
+#controls--more-practice-button:not(.modal-content *),
 #controls--end-session-button:not(.modal-content *) {
   margin-left: 21px;
   padding-left: 2rem !important;
@@ -66,8 +66,8 @@
 /* Hover */
 #controls--next-button:not(.modal-content *):hover,
 #controls--start-button:not(.modal-content *):hover,
-#controls--back-button:not(.modal-content *):hover
-  #controls--more-practice-button:not(.modal-content *):hover,
+#controls--back-button:not(.modal-content *):hover,
+#controls--more-practice-button:not(.modal-content *):hover,
 #controls--end-session-button:not(.modal-content *):hover {
   background: var(--nav-btn-bg-hover) !important;
 }
@@ -169,7 +169,7 @@
 #controls--start-button:not(.modal-content *) svg,
 #controls--back-button:not(.modal-content *) svg,
 #controls--more-practice-button:not(.modal-content *) svg,
-#controls--end-session-button:not(.modal-content *) sv {
+#controls--end-session-button:not(.modal-content *) svg {
   display: none;
 }
 
@@ -182,13 +182,13 @@
 }
 
 .audio-controls-container button {
-  background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg");
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg");
   width: 42px;
   height: 42px;
 }
 
 .audio-controls-container.audio-active button {
-  background: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg");
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg");
 }
 
 .audio-controls-container svg {
