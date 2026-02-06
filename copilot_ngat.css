@@ -57,6 +57,13 @@ header#header {
   justify-content: center;
 }
 
+/* Hard override: in some hosts, #content has competing layout rules */
+main#page #content.row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 /*
   Demographics card styling.
   Your main element uses a class like: "page-demographics.1.0"
@@ -73,14 +80,45 @@ main#page[class*="page-demographics"] #content.row > .col > div {
   box-sizing: border-box;
 }
 
+/* Some builds attach the page class to a parent (body/#root) instead of main */
+:is(body, #root, #root > div)[class*="page-demographics"] main#page #content.row > .col > div {
+  background: var(--nv-card-bg);
+  border: 1px solid var(--nv-card-border);
+  border-radius: 2px;
+  padding: 0;
+  max-width: 920px;
+  width: min(920px, calc(100vw - 160px));
+  box-sizing: border-box;
+}
+
 /* Ensure the card stays centered even if .col spans full width */
 main#page[class*="page-demographics"] #content.row > .col {
   display: flex;
   justify-content: center;
 }
 
+:is(body, #root, #root > div)[class*="page-demographics"] main#page #content.row > .col {
+  display: flex;
+  justify-content: center;
+}
+
+/* Force demographics fields to stack inside the card (prevents the 1-row tiny table look) */
+main#page[class*="page-demographics"] #content.row .row > [class*="col"] {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+:is(body, #root, #root > div)[class*="page-demographics"] main#page #content.row .row > [class*="col"] {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 /* Each field becomes a "row" in the card */
 main#page[class*="page-demographics"] .mb-3.content--item-group {
+  margin: 0 !important;
+}
+
+:is(body, #root, #root > div)[class*="page-demographics"] main#page .mb-3.content--item-group {
   margin: 0 !important;
 }
 
@@ -89,7 +127,16 @@ main#page[class*="page-demographics"] .mb-3.content--item-group:not(:last-child)
   border-bottom: none;
 }
 
+:is(body, #root, #root > div)[class*="page-demographics"] main#page .mb-3.content--item-group:not(:last-child) {
+  border-bottom: none;
+}
+
 main#page[class*="page-demographics"] .mb-3.content--item-group.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+:is(body, #root, #root > div)[class*="page-demographics"] main#page .mb-3.content--item-group.container-fluid {
   padding-left: 0;
   padding-right: 0;
 }
@@ -104,8 +151,21 @@ main#page[class*="page-demographics"] .content--item-form-group {
   box-sizing: border-box;
 }
 
+:is(body, #root, #root > div)[class*="page-demographics"] main#page .content--item-form-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 48px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* Flatten internal wrapper spacing so label/value align cleanly */
 main#page[class*="page-demographics"] .content--item-form-group > * {
+  min-width: 0;
+}
+
+:is(body, #root, #root > div)[class*="page-demographics"] main#page .content--item-form-group > * {
   min-width: 0;
 }
 
@@ -116,12 +176,32 @@ main#page[class*="page-demographics"] label.form-label * {
   line-height: 1.2;
 }
 
+:is(body, #root, #root > div)[class*="page-demographics"] main#page label.form-label,
+:is(body, #root, #root > div)[class*="page-demographics"] main#page label.form-label * {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
 main#page[class*="page-demographics"] label.form-label .content--item-prompt {
+  display: inline;
+}
+
+:is(body, #root, #root > div)[class*="page-demographics"] main#page label.form-label .content--item-prompt {
   display: inline;
 }
 
 /* Label formatting */
 main#page[class*="page-demographics"] label.form-label {
+  color: var(--nv-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  width: 200px;
+  flex: 0 0 200px;
+  text-align: left;
+}
+
+:is(body, #root, #root > div)[class*="page-demographics"] main#page label.form-label {
   color: var(--nv-muted);
   font-weight: 500;
   font-size: 0.95rem;
@@ -136,8 +216,17 @@ main#page[class*="page-demographics"] label.form-label .content--item-text::afte
   margin-left: 2px;
 }
 
+:is(body, #root, #root > div)[class*="page-demographics"] main#page label.form-label .content--item-text::after {
+  content: ":";
+  margin-left: 2px;
+}
+
 /* Hide the extra helper row under each input (invalid feedback/length blurb) */
 main#page[class*="page-demographics"] small.form-text {
+  display: none;
+}
+
+:is(body, #root, #root > div)[class*="page-demographics"] main#page small.form-text {
   display: none;
 }
 
@@ -157,8 +246,27 @@ main#page[class*="page-demographics"] input.content--text-input.form-control[dis
   line-height: 1.2;
 }
 
+:is(body, #root, #root > div)[class*="page-demographics"] main#page input.content--text-input.form-control[disabled] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--nv-text);
+  flex: 1 1 auto;
+  min-width: 0;
+  height: auto;
+  line-height: 1.2;
+}
+
 /* Hide placeholder emphasis if it ever shows */
 main#page[class*="page-demographics"] input.content--text-input::placeholder {
+  color: transparent;
+}
+
+:is(body, #root, #root > div)[class*="page-demographics"] main#page input.content--text-input::placeholder {
   color: transparent;
 }
 
