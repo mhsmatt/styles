@@ -96,13 +96,36 @@ main#page[class*="page-demographics"] .content--item-form-group {
   box-sizing: border-box;
 }
 
+/* Flatten internal wrapper spacing so label/value align cleanly */
+main#page[class*="page-demographics"] .content--item-form-group > * {
+  min-width: 0;
+}
+
+main#page[class*="page-demographics"] label.form-label,
+main#page[class*="page-demographics"] label.form-label * {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+main#page[class*="page-demographics"] label.form-label .content--item-prompt {
+  display: inline;
+}
+
 /* Label formatting */
 main#page[class*="page-demographics"] label.form-label {
-  margin: 0;
   color: var(--nv-muted);
-  font-weight: 400;
-  width: 140px;
-  flex: 0 0 140px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  width: 180px;
+  flex: 0 0 180px;
+  text-align: right;
+}
+
+/* Add a colon after the label text to mimic the reference */
+main#page[class*="page-demographics"] label.form-label .content--item-text::after {
+  content: ":";
+  margin-left: 2px;
 }
 
 /* Hide the extra helper row under each input (invalid feedback/length blurb) */
@@ -117,11 +140,13 @@ main#page[class*="page-demographics"] input.content--text-input.form-control[dis
   box-shadow: none !important;
   padding: 0 !important;
   margin: 0 !important;
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 1.05rem;
+  font-weight: 700;
   color: var(--nv-text);
   flex: 1 1 auto;
   min-width: 0;
+  height: auto;
+  line-height: 1.2;
 }
 
 /* Hide placeholder emphasis if it ever shows */
