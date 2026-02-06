@@ -9,7 +9,7 @@
 
 :root {
   --nv-bg: #f2f2f2;
-  --nv-card-bg: #f7f7f7;
+  --nv-card-bg: var(--nv-bg);
   --nv-card-border: #d4d4d4;
   --nv-text: #222;
   --nv-muted: #444;
@@ -67,9 +67,16 @@ main#page[class*="page-demographics"] #content.row > .col > div {
   border: 1px solid var(--nv-card-border);
   border-radius: 2px;
   padding: 0;
-  max-width: 720px;
-  width: min(720px, 100%);
+  /* Bigger card, but never overflow the viewport */
+  max-width: 920px;
+  width: min(920px, calc(100vw - 160px));
   box-sizing: border-box;
+}
+
+/* Ensure the card stays centered even if .col spans full width */
+main#page[class*="page-demographics"] #content.row > .col {
+  display: flex;
+  justify-content: center;
 }
 
 /* Each field becomes a "row" in the card */
@@ -77,8 +84,9 @@ main#page[class*="page-demographics"] .mb-3.content--item-group {
   margin: 0 !important;
 }
 
+/* No per-field borders/dividers (outer border only) */
 main#page[class*="page-demographics"] .mb-3.content--item-group:not(:last-child) {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: none;
 }
 
 main#page[class*="page-demographics"] .mb-3.content--item-group.container-fluid {
@@ -91,7 +99,7 @@ main#page[class*="page-demographics"] .content--item-form-group {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 34px 48px;
+  padding: 22px 48px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -117,9 +125,9 @@ main#page[class*="page-demographics"] label.form-label {
   color: var(--nv-muted);
   font-weight: 500;
   font-size: 0.95rem;
-  width: 180px;
-  flex: 0 0 180px;
-  text-align: right;
+  width: 200px;
+  flex: 0 0 200px;
+  text-align: left;
 }
 
 /* Add a colon after the label text to mimic the reference */
