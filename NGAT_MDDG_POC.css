@@ -124,7 +124,8 @@ body {
 }
 
 /* Align the header elements */
-.headerHiddentPanel {
+.headerHiddentPanel,
+.header--mobile-panel {
   display: block;
 }
 
@@ -197,7 +198,10 @@ body {
   opacity: 0;
   pointer-events: none;
   animation: enableBtn 0s 5s forwards; /* No gradual display, just enable after set time */
-  transition: background 0.2s, opacity 0.2s, cursor 0.2s;
+  transition:
+    background 0.2s,
+    opacity 0.2s,
+    cursor 0.2s;
 }
 
 .page-ending\.10 > #content > div > div > div > div > div > img {
@@ -265,7 +269,7 @@ body {
 }
 
 [class*="nonverbal"] .content--response-media {
-  max-height: 69.62704px;
+  max-height: 69.62704px !important;
 }
 
 [class*="quant"] .content--toggle-item-inner div,
@@ -309,6 +313,7 @@ body {
 .bi-play-circle-fill {
   display: none;
 }
+
 /* STOP HAND */
 #content > div > div > img {
   max-width: 50%;
@@ -336,4 +341,70 @@ body {
 
 #content {
   padding: 1rem 10%;
+}
+
+#page:is([class^="page-practice"], [class^="page-Form"])
+  .content--item-group-wrapper.stacked {
+  align-items: center;
+}
+
+#page:is([class^="page-practice"], [class^="page-Form"]) .content--item-prompt {
+  min-height: 0;
+  flex: 0 1 auto;
+}
+
+#page:is([class^="page-practice"], [class^="page-Form"])[class*="nonverbal"]
+  .content--toggle-wrapper {
+  flex: 0 0 auto;
+}
+
+#content {
+  min-height: 0;
+}
+
+#content > .col {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#content > .col > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 0;
+  flex: 0 1 auto;
+}
+
+#content img {
+  min-height: 0;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.content--item-group {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 0 1 auto;
+}
+
+.content--item-group-wrapper.stacked {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.content--toggle-wrapper {
+  min-height: 0;
+  flex: 0 1 auto;
+}
+
+.content--toggle-item-group {
+  min-height: 0;
+  flex: 0 1 auto;
+  grid-auto-rows: minmax(0, 1fr);
 }
