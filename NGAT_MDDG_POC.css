@@ -381,7 +381,6 @@ body {
 
 #content img {
   min-height: 0;
-  max-height: 100%;
   object-fit: contain;
 }
 
@@ -407,4 +406,24 @@ body {
   min-height: 0;
   flex: 0 1 auto;
   grid-auto-rows: minmax(0, 1fr);
+}
+
+#page[class^="page-items"] .header--logo {
+  flex-grow: 0;
+  padding: 0;
+}
+
+#page[class^="page-items"] .header--progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page[class^="page-items"] #header--progress-panel {
+  justify-content: flex-start;
+  width: auto;
+}
+
+#page[class^="page-items"] .header--title {
+  padding: 0;
 }
