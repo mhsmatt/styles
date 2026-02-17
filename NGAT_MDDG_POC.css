@@ -52,6 +52,7 @@
 
 .content--toggle-wrapper {
   width: auto;
+  align-self: center
 }
 
 .page-student-info\.2\.0 #content .col:first-of-type {
