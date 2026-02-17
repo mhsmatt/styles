@@ -246,6 +246,10 @@ body {
   width: auto;
 }
 
+.page-instructions.2.0 #content > div > div:nth-child(2) > div {
+  display: none;
+}
+
 @keyframes enableBtn {
   to {
     opacity: 1;
