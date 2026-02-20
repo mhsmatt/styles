@@ -461,3 +461,15 @@ body::before {
   flex-direction: column;
   flex-wrap: nowrap;
 }
+
+#page[class^="page-child_demographics_described_sex"]
+  .content--item-group:has(
+    label.form-label[for="input-age-in years and months"]
+  ) {
+  margin-bottom: 0 !important;
+}
+
+#page[class^="page-child_demographics_described_sex"] .content--input-hint {
+  font-size: unset;
+  color: unset;
+}
