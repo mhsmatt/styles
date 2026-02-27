@@ -191,14 +191,6 @@
   display: none;
 }
 
-.audio-controls-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  top: 100%;
-}
-
 .audio-controls-container button {
   background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg");
   width: 42px;
@@ -349,6 +341,7 @@ body::before {
 #page:is([class^="page-practiceRound"], [class^="page-Form"])
   .audio-controls-container
   button {
+  position: relative;
   background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png");
   background-size: cover;
 }
@@ -408,6 +401,21 @@ body::before {
 }
 
 #page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .stacked-reverse
+  .content--item-prompt
+  .audio-controls {
+  margin: 1rem 0 -1rem;
+}
+
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .stacked-reverse
+  .content--item-prompt
+  > div:last-child {
+  position: absolute;
+  top: 1rem;
+}
+
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
   #controls--next-button:not(:disabled)::after {
   animation: revealOrange 0s linear 15s forwards !important;
 }
@@ -457,7 +465,9 @@ body::before {
 }
 
 #page:is([class^="page-practiceRound"], [class^="page-Form"])
-  .content--item-group-wrapper.stacked {
+  .content--item-group-wrapper.stacked,
+#page:is([class^="page-practiceRound"], [class^="page-Form"])
+  .content--item-group-wrapper.stacked-reverse {
   flex-direction: column;
   flex-wrap: nowrap;
 }

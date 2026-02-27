@@ -349,7 +349,9 @@ body {
 }
 
 #page:is([class^="page-practice"], [class^="page-Form"])
-  .content--item-group-wrapper.stacked {
+  .content--item-group-wrapper.stacked,
+#page:is([class^="page-practice"], [class^="page-Form"])
+  .content--item-group-wrapper.stacked-reverse {
   align-items: center;
 }
 
@@ -396,7 +398,8 @@ body {
   flex: 0 1 auto;
 }
 
-.content--item-group-wrapper.stacked {
+.content--item-group-wrapper.stacked,
+.content--item-group-wrapper.stacked-reverse {
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
