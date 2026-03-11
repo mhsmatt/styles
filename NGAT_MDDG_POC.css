@@ -119,21 +119,6 @@ body {
   color: white;
 }
 
-/* Hide the page counter located on the right corner */
-.headerBigPanel #header--progress-panel {
-  display: none;
-}
-
-/* Align the header elements */
-.headerHiddentPanel,
-.header--mobile-panel {
-  display: block;
-}
-
-.mobileHeader {
-  display: flex;
-}
-
 .content--response-media {
   align-self: auto;
 }
