@@ -1,72 +1,18 @@
 :root {
-  --border-color: #bebebe;
   --background-color: #ececec;
-  --header-text-color: #221f1f;
-  --button-width: 100px;
+  --border-color: #bebebe;
   --button-height: 77px;
-  --submit-button-width: 188px;
-  --submit-button-height: 136px;
-  --hdr-pad-y: 16px;
+  --button-width: 100px;
   --hdr-pad-x: 10px;
+  --hdr-pad-y: 16px;
+  --header-text-color: #221f1f;
+  --ngat-zoom: 0.75;
+  --submit-button-height: 136px;
+  --submit-button-width: 188px;
 }
 
-#controls--next-button,
-#controls--start-button,
-#controls--redirect-button {
-  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: var(--button-width);
-  height: var(--button-height);
-  border: none;
-  color: transparent !important;
-  background-color: transparent !important;
-  float: right;
-}
-
-.content--toggle-item-option:hover {
-  background-color: #ffffff !important;
-}
-
-.page-preTasks\.6 #controls--next-button {
-  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png");
-}
-
-.page-review\.9 #controls--next-button {
-  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
-  width: var(--submit-button-width);
-  height: var(--submit-button-height);
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-right: 3rem;
-}
-
-.page-review\.9 #controls--back-button {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin: 3rem;
-}
-
-.content--toggle-wrapper {
-  width: auto;
-  align-self: center;
-}
-
-.page-student-info\.2\.0 #content .col:first-of-type {
-  border: 1px solid var(--border-color) !important;
-  padding: 50px 50px !important;
-}
-
-.content--text-input.form-control {
-  background-color: unset;
-  font-weight: bold;
-}
-
-.content--toggle-item-group {
-  background-color: unset !important;
+body {
+  background-color: var(--background-color);
 }
 
 #root {
@@ -74,62 +20,85 @@
 }
 
 #page {
-  border: 1px solid var(--border-color) !important;
   position: relative;
+  border: 1px solid var(--border-color) !important;
+  zoom: var(--ngat-zoom);
 }
 
-.page-pause\.-1 .content--markup-text {
-  font-size: 21px !important;
+#content {
+  min-height: 0;
+  padding: 1rem 10%;
 }
 
-.content--toggle-item-group .content--toggle-item-option {
-  background-color: white;
-  padding: 8px 8px !important;
+#content > .col {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  max-height: 100%;
+  overflow: hidden;
 }
 
-.content--toggle-item-group .content--toggle-item-option:focus-visible,
-.content--toggle-item-group .content--toggle-item-option.toggled,
-.content--toggle-item-group .btn-check:focus-visible + label,
-.content--toggle-item-group .content--toggle-item-option:active {
-  background-color: #555b6e !important;
-  border-color: #555b6e !important;
+#content > .col > div {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-items: center;
+  min-height: 0;
 }
 
-#controls--next-button:disabled {
-  display: none;
+#content > div > div > img {
+  max-width: 50%;
+  margin-bottom: 0;
 }
 
-body {
-  background-color: var(--background-color);
-}
-
-#header--progress-panel {
-  font-size: 21px !important;
-  font-weight: 700;
-  color: var(--header-text-color);
-  font-style: normal;
-}
-
-[class*="practice"] #header--progress-panel {
-  color: white !important;
-}
-
-[class*="practice"] #header {
-  background-color: gray;
-  color: white;
-}
-
-.content--response-media {
-  align-self: auto;
+#content img {
+  object-fit: contain;
 }
 
 #header {
-  background: transparent;
   padding: var(--hdr-pad-y) var(--hdr-pad-x);
+  background: transparent;
 }
 
-.content--item-group-wrapper {
-  max-width: 1200px;
+#header--progress-panel {
+  color: var(--header-text-color);
+  font-size: 21px !important;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#controls {
+  padding-bottom: 1.5rem;
+}
+
+#controls--back-button {
+  width: var(--button-width);
+  height: var(--button-height);
+  border: none;
+  background-color: transparent !important;
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent !important;
+}
+
+#controls--back-button:hover {
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_selected_1x.png");
+}
+
+#controls--next-button,
+#controls--start-button,
+#controls--redirect-button {
+  float: right;
+  width: var(--button-width);
+  height: var(--button-height);
+  border: none;
+  background-color: transparent !important;
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent !important;
 }
 
 #controls--next-button:hover,
@@ -138,162 +107,131 @@ body {
   background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
 }
 
-.page-preTasks\.6 #controls--next-button:hover {
-  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_selected_1x.png");
-}
-
-.page-review\.9 #controls--next-button:hover {
-  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn-selected.svg");
-}
-
-#controls--back-button:hover {
-  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_selected_1x.png");
-}
-
-#controls--back-button {
-  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_1x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: var(--button-width);
-  height: var(--button-height);
-  border: none;
-  color: transparent !important;
-  background-color: transparent !important;
+#controls--next-button:disabled {
+  display: none;
 }
 
 .btn-center-stack {
   justify-content: space-between !important;
-  padding-left: 70px;
   padding-right: 70px;
-}
-
-.page-review\.9 .btn-center-stack {
-  position: absolute;
-  inset: 0;
-  margin: 0 !important;
-  padding: 0 !important;
+  padding-left: 70px;
 }
 
 .btn-center-stack #controls--next-button:only-child,
-.btn-center-stack #controls--start-button:only-child {
+.btn-center-stack #controls--start-button:only-child,
+.btn-center-stack #controls--redirect-button:only-child {
   margin-left: auto;
 }
 
 .btn-center-stack #controls--redirect-button:only-child {
-  margin-left: auto;
+  animation: enableBtn 0s 5s forwards;
   opacity: 0;
   pointer-events: none;
-  animation: enableBtn 0s 5s forwards; /* No gradual display, just enable after set time */
   transition:
     background 0.2s,
     opacity 0.2s,
     cursor 0.2s;
 }
 
-.page-ending\.10 > #content > div > div > div > div > div > img {
-  content: url("https://cdn.mhs.com/mhscdn/Gifted/Common/gifted__stophand_1x.png");
-  max-width: 85%;
-  margin-bottom: 0;
-}
-
-.icon-style {
-  height: auto;
-  width: auto;
-}
-
-.page-ending\.10 .content--markup-text {
-  display: none;
-}
-
-.page-ending-complete\.11 .content--markup-text {
-  font-size: 21px;
-  font-weight: bold;
-  color: var(--header-text-color);
-}
-
-.page-ending-complete\.11 > div > div > div > div > div > div > img {
-  width: 60px;
-  height: 60px;
-}
-
 .button-chevron {
   display: none;
 }
 
-/* ===== Page description anchored to header corner ===== */
+.content--item-form-group label,
+.content--item-form-group input,
+.content--item-form-group label > * {
+  font-size: 18px !important;
+}
+
+.content--item-group {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.content--item-group-wrapper {
+  max-width: 1200px;
+  gap: 0;
+}
+
+.content--item-group-wrapper.stacked,
+.content--item-group-wrapper.stacked-reverse {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
 .content--page-description {
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
-  color: white;
-  padding: var(--hdr-pad-y) calc(var(--hdr-pad-x) + var(--bs-gutter-x) / 2) !important;
-  font-weight: bold;
+  width: auto;
   margin-bottom: 0;
+  padding: 5px 10px !important;
+  color: white;
+  font-weight: bold;
+}
+
+.content--response-media {
+  align-self: auto;
+}
+
+.content--text-input.form-control {
+  background-color: unset;
+  font-weight: bold;
+}
+
+.content--toggle-wrapper {
+  flex: 0 1 auto;
+  align-self: center;
   width: auto;
 }
 
-.page-instructions\.2\.0 #content > div > div:nth-child(2) > div {
-  display: none;
+.content--toggle-item-group {
+  flex: 0 1 auto;
+  min-height: 0;
+  background-color: unset !important;
+  grid-auto-rows: minmax(0, 1fr);
 }
 
-@keyframes enableBtn {
-  to {
-    opacity: 1;
-    pointer-events: auto;
-    cursor: pointer;
-  }
+.content--toggle-item-group .content--toggle-item-option {
+  padding: 8px 8px !important;
 }
 
-@media only screen and (max-width: 1025px) {
-  .content--item-media {
-    max-height: 275px !important;
-  }
-
-  [class*="nonverbal"] .content--response-media {
-    max-height: 47.86859px !important;
-  }
+.content--toggle-item-group .content--toggle-item-option:focus-visible,
+.content--toggle-item-group .content--toggle-item-option.toggled,
+.content--toggle-item-group .btn-check:focus-visible + label,
+.content--toggle-item-group .content--toggle-item-option:active {
+  border-color: #555b6e !important;
+  background-color: #555b6e !important;
 }
 
-.content--item-media {
-  max-height: 400px;
-}
-
-[class*="nonverbal"] .content--response-media {
-  max-height: 69.62704px !important;
-}
-
-[class*="quant"] .content--toggle-item-inner div,
-[class*="nonverbal"] .content--toggle-item-inner div {
-  width: 100%;
-  text-align: center;
-}
-
-/* Set all content in options to 18px font size */
 .content--toggle-item-inner > * {
   font-size: 18px !important;
+}
+
+.content--toggle-item-option:hover {
+  background-color: #ffffff !important;
 }
 
 .content--toggle-item-option-indicator.radio {
   display: none;
 }
 
-#content > div > div > div > div > img {
-  width: 75%;
-}
-
-.content--item-group-wrapper {
-  gap: 0;
+.icon-style {
+  width: auto;
+  height: auto;
 }
 
 .video-container {
-  width: 70%;
-  max-width: 800px;
+  max-width: 1100px;
 }
 
 .play-button-overlay {
   background-image: url(https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__playbutton_1x.png);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .video-controls-container {
@@ -304,33 +242,34 @@ body {
   display: none;
 }
 
-/* STOP HAND */
-#content > div > div > img {
-  max-width: 50%;
-  margin-bottom: 0;
+[class*="practice"] #header {
+  background-color: gray;
+  color: white;
 }
 
-/* INSTRUCTIONAL IMAGE (SHORTCUT ALT+K) */
-.page-instructions\.2\.0 > #content > div > div:nth-child(1) > img {
-  max-width: 1200px;
+[class*="practice"] #header--progress-panel {
+  color: white !important;
+}
+
+[class*="quant"] .content--toggle-item-inner div,
+[class*="nonverbal"] .content--toggle-item-inner div {
   width: 100%;
+  text-align: center;
 }
 
-/* Font Sizing */
+[class*="nonverbal"],
+[class*="quant"] {
+  .col,
+  .col > div,
+  .content--item-group,
+  .content--item-group-wrapper,
+  .content--item-prompt {
+    height: 100%;
+  }
 
-/* Demographics */
-.content--item-form-group label,
-.content--item-form-group input,
-.content--item-form-group label > * {
-  font-size: 18px !important;
-}
-
-#controls {
-  padding-bottom: 1.5rem;
-}
-
-#content {
-  padding: 1rem 10%;
+  .content--item-prompt {
+    justify-content: center;
+  }
 }
 
 #page:is([class^="page-practice"], [class^="page-Form"])
@@ -341,64 +280,13 @@ body {
 }
 
 #page:is([class^="page-practice"], [class^="page-Form"]) .content--item-prompt {
-  min-height: 0;
   flex: 0 1 auto;
+  min-height: 0;
 }
 
 #page:is([class^="page-practice"], [class^="page-Form"])[class*="nonverbal"]
   .content--toggle-wrapper {
   flex: 0 0 auto;
-}
-
-#content {
-  min-height: 0;
-}
-
-#content > .col {
-  flex: 1 1 auto;
-  min-height: 0;
-  max-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-#content > .col > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 0;
-  flex: 0 1 auto;
-}
-
-#content img {
-  min-height: 0;
-  object-fit: contain;
-}
-
-.content--item-group {
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  flex: 0 1 auto;
-}
-
-.content--item-group-wrapper.stacked,
-.content--item-group-wrapper.stacked-reverse {
-  flex-direction: column;
-  flex-wrap: nowrap;
-  overflow: hidden;
-}
-
-.content--toggle-wrapper {
-  min-height: 0;
-  flex: 0 1 auto;
-}
-
-.content--toggle-item-group {
-  min-height: 0;
-  flex: 0 1 auto;
-  grid-auto-rows: minmax(0, 1fr);
 }
 
 #page[class^="page-items"] .header--logo {
@@ -419,4 +307,112 @@ body {
 
 #page[class^="page-items"] .header--title {
   padding: 0;
+}
+
+.page-student-info\.2\.0 #content .col:first-of-type {
+  padding: 50px 50px !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.page-preTasks\.6 #controls--next-button {
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png");
+}
+
+.page-preTasks\.6 #controls--next-button:hover {
+  background-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_selected_1x.png");
+}
+
+.page-instructions\.2\.0 > #content > div > div:nth-child(1) > img {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.page-instructions\.2\.0 #content > div > div:nth-child(2) > div {
+  display: none;
+}
+
+.page-pause\.-1 .content--markup-text {
+  font-size: 21px !important;
+}
+
+.page-review\.9 #controls--back-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 3rem;
+}
+
+.page-review\.9 #controls--next-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: var(--submit-button-width);
+  height: var(--submit-button-height);
+  margin-right: 3rem;
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
+  transform: translateY(-50%);
+}
+
+.page-review\.9 #controls--next-button:hover {
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn-selected.svg");
+}
+
+.page-review\.9 .btn-center-stack {
+  position: absolute;
+  inset: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page-ending\.10 > #content > div > div > div > div > div > img {
+  max-width: 85%;
+  margin-bottom: 0;
+  content: url("https://cdn.mhs.com/mhscdn/Gifted/Common/gifted__stophand_1x.png");
+}
+
+.page-ending\.10 .content--markup-text {
+  display: none;
+}
+
+.page-ending-complete\.11 .content--markup-text {
+  color: var(--header-text-color);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.page-ending-complete\.11 > div > div > div > div > div > div > img {
+  width: 60px;
+  height: 60px;
+}
+
+@keyframes enableBtn {
+  to {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+}
+
+@media all and (min-width: 992px) and (min-height: 800px) {
+  :root {
+    --ngat-zoom: 1;
+  }
+}
+
+@media all and (min-width: 1260px) and (min-height: 1000px) {
+  :root {
+    --ngat-zoom: 1.25;
+  }
+}
+
+@media all and (min-width: 1680px) and (min-height: 1200px) {
+  :root {
+    --ngat-zoom: 1.5;
+  }
+}
+
+@media all and (min-width: 2000px) and (min-height: 1800px) {
+  :root {
+    --ngat-zoom: 2;
+  }
 }
