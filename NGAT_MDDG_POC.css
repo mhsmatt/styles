@@ -4,25 +4,140 @@
   --button-height: 77px;
   --button-width: 100px;
   --hdr-pad-x: 10px;
-  --hdr-pad-y: 16px;
+  --hdr-pad-y: 32px;
   --header-text-color: #221f1f;
-  --ngat-zoom: 0.6;
+  --ngat-zoom: 0.85;
   --submit-button-height: 136px;
   --submit-button-width: 188px;
+  --ngat-scale: 0.75;
+  --ngat-width: 950px;
+  --ngat-height: 708px;
+  --ngat-top-gap: 30px;
+  
+  /* 2x3Verbal */
+  --grid-2x3-verbal-test-width: auto;
+  --grid-2x3-verbal-test-height: auto;
+  --grid-2x3-verbal-resp-width: 270px;
+  --grid-2x3-verbal-resp-height: 178px;
+
+  /* Equations */
+  --grid-equations-test-width: 909px;
+  --grid-equations-test-height: 236px;
+  --grid-equations-resp-width: 102px;
+  --grid-equations-resp-height: 102px;
+
+  /* Matrices */
+  --grid-matrices-test-width: 585px;
+  --grid-matrices-test-height: 300px;
+  --grid-matrices-resp-width: 102px;
+  --grid-matrices-resp-height: 73px;
+
+  /* Numberline */
+  --grid-numberline-test-width: 606px;
+  --grid-numberline-test-height: 102px;
+  --grid-numberline-resp-width: 102px;
+  --grid-numberline-resp-height: 102px;
+
+  /* Thinking */
+  --grid-thinking-test-width: 585px;
+  --grid-thinking-test-height: 300px;
+  --grid-thinking-resp-width: 102px;
+  --grid-thinking-resp-height: 102px;
+
+  /* 2x2 */
+  --grid-2x2-test-width: 148px;
+  --grid-2x2-test-height: 148px;
+  --grid-2x2-resp-width: 61px;
+  --grid-2x2-resp-height: 61px;
+
+  /* 2x2LargeFolding */
+  --grid-2x2-large-folding-test-width: 229px;
+  --grid-2x2-large-folding-test-height: 288px;
+  --grid-2x2-large-folding-test-offset-right: 41px;
+  --grid-2x2-large-folding-resp-width: 61px;
+  --grid-2x2-large-folding-resp-height: 61px;
+
+  /* 2x2SmallFolding */
+  --grid-2x2-small-folding-test-width: 225px;
+  --grid-2x2-small-folding-test-height: 249px;
+  --grid-2x2-small-folding-test-offset-top: 8px;
+  --grid-2x2-small-folding-test-offset-right: 52px;
+  --grid-2x2-small-folding-resp-width: 61px;
+  --grid-2x2-small-folding-resp-height: 61px;
+
+  /* 2x3 */
+  --grid-2x3-test-width: 234px;
+  --grid-2x3-test-height: 148px;
+  --grid-2x3-resp-width: 61px;
+  --grid-2x3-resp-height: 61px;
+
+  /* 2x3LargeFolding */
+  --grid-2x3-large-folding-test-width: 327px;
+  --grid-2x3-large-folding-test-height: 230px;
+  --grid-2x3-large-folding-test-offset-top: 9px;
+  --grid-2x3-large-folding-test-offset-right: 42px;
+  --grid-2x3-large-folding-resp-width: 61px;
+  --grid-2x3-large-folding-resp-height: 61px;
+
+  /* 2x3SmallFolding */
+  --grid-2x3-small-folding-test-width: 290px;
+  --grid-2x3-small-folding-test-height: 200px;
+  --grid-2x3-small-folding-test-offset-top: 52px;
+  --grid-2x3-small-folding-test-offset-right: 56px;
+  --grid-2x3-small-folding-resp-width: 61px;
+  --grid-2x3-small-folding-resp-height: 61px;
+
+  /* 3x2 */
+  --grid-3x2-test-width: 148px;
+  --grid-3x2-test-height: 234px;
+  --grid-3x2-resp-width: 61px;
+  --grid-3x2-resp-height: 61px;
+
+  /* 3x2Folding */
+  --grid-3x2-folding-test-width: 222px;
+  --grid-3x2-folding-test-height: 356px;
+  --grid-3x2-folding-test-offset-top: 9px;
+  --grid-3x2-folding-test-offset-right: 49px;
+  --grid-3x2-folding-resp-width: 61px;
+  --grid-3x2-folding-resp-height: 61px;
+
+  /* 3x3 */
+  --grid-3x3-test-width: 234px;
+  --grid-3x3-test-height: 234px;
+  --grid-3x3-resp-width: 61px;
+  --grid-3x3-resp-height: 61px;
+
+  /* 3x3Folding */
+  --grid-3x3-folding-test-width: 331px;
+  --grid-3x3-folding-test-height: 352px;
+  --grid-3x3-folding-test-offset-right: 46px;
+  --grid-3x3-folding-resp-width: 61px;
+  --grid-3x3-folding-resp-height: 61px;
+
+  /* Box */
+  --grid-box-test-width: 247px;
+  --grid-box-test-height: 183px;
+  --grid-box-resp-width: 90px;
+  --grid-box-resp-height: 58px;
 }
 
 body {
   background-color: var(--background-color);
 }
 
-#root {
-  padding: 50px;
-}
-
 #page {
+  justify-self: center;
+  width: var(--ngat-width) !important;
+  min-width: var(--ngat-width) !important;
+  max-width: var(--ngat-width) !important;
+  height: var(--ngat-height) !important;
+  max-height: var(--ngat-height) !important;
+  margin: 5px auto 0 !important;
+  border: 1px solid #bebebe !important;
   position: relative;
-  border: 1px solid var(--border-color) !important;
+  overflow: hidden !important;
   zoom: var(--ngat-zoom);
+  transform: none !important;
 }
 
 #content {
@@ -58,6 +173,7 @@ body {
 
 #header {
   padding: var(--hdr-pad-y) var(--hdr-pad-x);
+  font-size: 32px;
   background: transparent;
 }
 
@@ -335,54 +451,55 @@ body {
   font-size: 21px !important;
 }
 
-.page-review\.9 #controls--back-button {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 3rem;
+.page-review\.9, .page-review\.47 {
+    #controls--back-button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 3rem;
+    }
 }
 
-.page-review\.9 #controls--next-button {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: var(--submit-button-width);
-  height: var(--submit-button-height);
-  margin-right: 3rem;
-  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
-  transform: translateY(-50%);
+.page-review\.9, .page-review\.47 { 
+    #controls--next-button {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: var(--submit-button-width);
+      height: var(--submit-button-height);
+      margin-right: 3rem;
+      background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
+      transform: translateY(-50%);
+    }
 }
 
-.page-review\.9 #controls--next-button:hover {
-  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn-selected.svg");
+.page-review\.9, .page-review\.47 {
+    #controls--next-button:hover {
+        background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn-selected.svg");
+    }
 }
 
-.page-review\.9 .btn-center-stack {
-  position: absolute;
-  inset: 0;
-  margin: 0 !important;
-  padding: 0 !important;
+.page-review\.9, , .page-review\.47 {
+    .btn-center-stack {
+      position: absolute;
+      inset: 0;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
 }
 
-.page-ending\.10 > #content > div > div > div > div > div > img {
-  max-width: 85%;
-  margin-bottom: 0;
-  content: url("https://cdn.mhs.com/mhscdn/Gifted/Common/gifted__stophand_1x.png");
+.page-ending\.10, .page-ending\.48 {
+    #content > div > div > div > div > div > img {
+      max-width: 85%;
+      margin-bottom: 0;
+      content: url("https://cdn.mhs.com/mhscdn/Gifted/Common/gifted__stophand_1x.png");
+    }
 }
 
-.page-ending\.10 .content--markup-text {
-  display: none;
-}
-
-.page-ending-complete\.11 .content--markup-text {
-  color: var(--header-text-color);
-  font-size: 21px;
-  font-weight: bold;
-}
-
-.page-ending-complete\.11 > div > div > div > div > div > div > img {
-  width: 60px;
-  height: 60px;
+.page-ending\.10, .page-ending\.48 {
+    .content--markup-text {
+      display: none;
+    }
 }
 
 @keyframes enableBtn {
@@ -393,25 +510,150 @@ body {
   }
 }
 
+/* Apply only when vars exist */
+.content--item-media {
+  width: var(--stim-width);
+  height: var(--stim-height);
+  top: var(--stim-top);       /* not applied if undefined */
+  right: var(--stim-right);   /* not applied if undefined */
+}
+
+.content--response-media {
+  width: var(--resp-width);
+  height: var(--resp-height);
+  top: var(--resp-top);       /* not applied if undefined */
+  right: var(--resp-right);   /* not applied if undefined */
+}
+
+/* Nonverbal */
+[class*="nonverbal"][class*="2x2"] {
+  --stim-width: var(--grid-2x2-test-width);
+  --stim-height: var(--grid-2x2-test-height);
+  --resp-width: var(--grid-2x2-resp-width);
+  --resp-height: var(--grid-2x2-resp-height);
+}
+[class*="nonverbal"][class*="2x2LargeFolding"] {
+  --stim-width: var(--grid-2x2-large-folding-test-width);
+  --stim-height: var(--grid-2x2-large-folding-test-height);
+  --stim-right: var(--grid-2x2-large-folding-test-offset-right); /* offset exists */
+  --resp-width: var(--grid-2x2-large-folding-resp-width);
+  --resp-height: var(--grid-2x2-large-folding-resp-height);
+}
+[class*="nonverbal"][class*="2x2SmallFolding"] {
+  --stim-width: var(--grid-2x2-small-folding-test-width);
+  --stim-height: var(--grid-2x2-small-folding-test-height);
+  --stim-top: var(--grid-2x2-small-folding-test-offset-top);      /* offset exists */
+  --stim-right: var(--grid-2x2-small-folding-test-offset-right);  /* offset exists */
+  --resp-width: var(--grid-2x2-small-folding-resp-width);
+  --resp-height: var(--grid-2x2-small-folding-resp-height);
+}
+[class*="nonverbal"][class*="2x3"] {
+  --stim-width: var(--grid-2x3-test-width);
+  --stim-height: var(--grid-2x3-test-height);
+  --resp-width: var(--grid-2x3-resp-width);
+  --resp-height: var(--grid-2x3-resp-height);
+}
+[class*="nonverbal"][class*="2x3LargeFolding"] {
+  --stim-width: var(--grid-2x3-large-folding-test-width);
+  --stim-height: var(--grid-2x3-large-folding-test-height);
+  --stim-top: var(--grid-2x3-large-folding-test-offset-top);
+  --stim-right: var(--grid-2x3-large-folding-test-offset-right);
+  --resp-width: var(--grid-2x3-large-folding-resp-width);
+  --resp-height: var(--grid-2x3-large-folding-resp-height);
+}
+[class*="nonverbal"][class*="2x3SmallFolding"] {
+  --stim-width: var(--grid-2x3-small-folding-test-width);
+  --stim-height: var(--grid-2x3-small-folding-test-height);
+  --stim-top: var(--grid-2x3-small-folding-test-offset-top);
+  --stim-right: var(--grid-2x3-small-folding-test-offset-right);
+  --resp-width: var(--grid-2x3-small-folding-resp-width);
+  --resp-height: var(--grid-2x3-small-folding-resp-height);
+}
+[class*="nonverbal"][class*="3x2"] {
+  --stim-width: var(--grid-3x2-test-width);
+  --stim-height: var(--grid-3x2-test-height);
+  --resp-width: var(--grid-3x2-resp-width);
+  --resp-height: var(--grid-3x2-resp-height);
+}
+[class*="nonverbal"][class*="3x2Folding"] {
+  --stim-width: var(--grid-3x2-folding-test-width);
+  --stim-height: var(--grid-3x2-folding-test-height);
+  --stim-top: var(--grid-3x2-folding-test-offset-top);
+  --stim-right: var(--grid-3x2-folding-test-offset-right);
+  --resp-width: var(--grid-3x2-folding-resp-width);
+  --resp-height: var(--grid-3x2-folding-resp-height);
+}
+[class*="nonverbal"][class*="3x3"] {
+  --stim-width: var(--grid-3x3-test-width);
+  --stim-height: var(--grid-3x3-test-height);
+  --resp-width: var(--grid-3x3-resp-width);
+  --resp-height: var(--grid-3x3-resp-height);
+}
+[class*="nonverbal"][class*="3x3Folding"] {
+  --stim-width: var(--grid-3x3-folding-test-width);
+  --stim-height: var(--grid-3x3-folding-test-height);
+  --stim-right: var(--grid-3x3-folding-test-offset-right);
+  --resp-width: var(--grid-3x3-folding-resp-width);
+  --resp-height: var(--grid-3x3-folding-resp-height);
+}
+[class*="nonverbal"][class*="Box"] {
+  --stim-width: var(--grid-box-test-width);
+  --stim-height: var(--grid-box-test-height);
+  --resp-width: var(--grid-box-resp-width);
+  --resp-height: var(--grid-box-resp-height);
+}
+
+/* Quant */
+[class*="quant"][class*="Equations"] {
+  --stim-width: var(--grid-equations-test-width);
+  --stim-height: var(--grid-equations-test-height);
+  --resp-width: var(--grid-equations-resp-width);
+  --resp-height: var(--grid-equations-resp-height);
+}
+[class*="quant"][class*="Matrices"] {
+  --stim-width: var(--grid-matrices-test-width);
+  --stim-height: var(--grid-matrices-test-height);
+  --resp-width: var(--grid-matrices-resp-width);
+  --resp-height: var(--grid-matrices-resp-height);
+}
+[class*="quant"][class*="Numberline"] {
+  --stim-width: var(--grid-numberline-test-width);
+  --stim-height: var(--grid-numberline-test-height);
+  --resp-width: var(--grid-numberline-resp-width);
+  --resp-height: var(--grid-numberline-resp-height);
+}
+[class*="quant"][class*="Thinking"] {
+  --stim-width: var(--grid-thinking-test-width);
+  --stim-height: var(--grid-thinking-test-height);
+  --resp-width: var(--grid-thinking-resp-width);
+  --resp-height: var(--grid-thinking-resp-height);
+}
+
+/* Verbal (2x3Verbal: no testSize, so only response size) */
+[class*="verbal"] {
+  --resp-width: var(--grid-2x3-verbal-resp-width);
+  --resp-height: var(--grid-2x3-verbal-resp-height);
+}
+
 @media all and (min-width: 992px) and (min-height: 800px) {
   :root {
     --ngat-zoom: 1;
   }
 }
 
-@media all and (min-width: 1260px) and (min-height: 1000px) {
+@media all and (min-width: 1260px) and (min-height: 1075px) {
   :root {
     --ngat-zoom: 1.25;
   }
 }
 
-@media all and (min-width: 1680px) and (min-height: 1200px) {
+@media all and (min-width: 1680px) and (min-height: 1275px) {
   :root {
     --ngat-zoom: 1.5;
   }
 }
 
-@media all and (min-width: 2000px) and (min-height: 1800px) {
+@media all and (min-width: 2000px) and (min-height: 1875px) {
   :root {
     --ngat-zoom: 2;
   }
