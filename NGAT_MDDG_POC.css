@@ -11,7 +11,7 @@
   --submit-button-width: 188px;
   --ngat-scale: 0.75;
   --ngat-width: 950px;
-  --ngat-height: 708px;
+  --ngat-height: 700px;
   --ngat-top-gap: 30px;
   
   /* 2x3Verbal */
@@ -385,6 +385,7 @@ body {
   }
 
   .content--item-prompt {
+      align-items: center;
     justify-content: center;
   }
 }
@@ -515,15 +516,15 @@ body {
 .content--item-media {
   width: var(--stim-width);
   height: var(--stim-height);
-  top: var(--stim-top);       /* not applied if undefined */
-  right: var(--stim-right);   /* not applied if undefined */
+  margin-top: var(--stim-top) !important;       /* not applied if undefined */
+  margin-right: var(--stim-right) !important;   /* not applied if undefined */
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .content--response-media {
   width: var(--resp-width);
   height: var(--resp-height);
-  top: var(--resp-top);       /* not applied if undefined */
-  right: var(--resp-right);   /* not applied if undefined */
 }
 
 /* Nonverbal */
