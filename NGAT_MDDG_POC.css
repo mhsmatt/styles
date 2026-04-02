@@ -458,7 +458,7 @@ html {
   font-size: 21px !important;
 }
 
-.page-review\.9, .page-review\.47 {
+.page-review\.9, .page-review\.47, .page-review\.57  {
     #controls--back-button {
       position: absolute;
       bottom: 0;
@@ -467,7 +467,7 @@ html {
     }
 }
 
-.page-review\.9, .page-review\.47 { 
+.page-review\.9, .page-review\.47, .page-review\.57 { 
     #controls--next-button {
       position: absolute;
       top: 50%;
@@ -480,13 +480,13 @@ html {
     }
 }
 
-.page-review\.9, .page-review\.47 {
+.page-review\.9, .page-review\.47, .page-review\.57  {
     #controls--next-button:hover {
         background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn-selected.svg");
     }
 }
 
-.page-review\.9, , .page-review\.47 {
+.page-review\.9, , .page-review\.47, .page-review\.57  {
     .btn-center-stack {
       position: absolute;
       inset: 0;
@@ -495,7 +495,7 @@ html {
     }
 }
 
-.page-ending\.10, .page-ending\.48 {
+.page-ending\.10, .page-ending\.48, .page-ending\.58 {
     #content > div > div > div > div > div > img {
       max-width: 85%;
       margin-bottom: 0;
@@ -503,7 +503,7 @@ html {
     }
 }
 
-.page-ending\.10, .page-ending\.48 {
+.page-ending\.10, .page-ending\.48, .page-ending\.58 {
     .content--markup-text {
       display: none;
     }
