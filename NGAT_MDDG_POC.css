@@ -123,6 +123,11 @@
 
 body {
   background-color: var(--background-color);
+  overflow-y: hidden;
+}
+
+html {
+    overflow-y: hidden;
 }
 
 #page {
