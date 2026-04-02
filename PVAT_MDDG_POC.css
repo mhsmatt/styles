@@ -93,7 +93,7 @@
 /* Forward (right-pointing) wedge */
 #controls--next-button:not(.modal-content *)::after,
 #controls--start-button:not(.modal-content *)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -0.3px;
   left: calc(100% + -0.5px);
@@ -121,7 +121,7 @@
 #controls--back-button:not(.modal-content *)::after,
 #controls--more-practice-button:not(.modal-content *)::after,
 #controls--end-session-button:not(.modal-content *)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -0.3px;
   right: calc(100% + -0.5px);
@@ -153,7 +153,7 @@
 /* Inner chevrons */
 #controls--next-button:not(.modal-content *)::before,
 #controls--start-button:not(.modal-content *)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0.5rem;
@@ -169,7 +169,7 @@
 #controls--back-button:not(.modal-content *)::before,
 #controls--more-practice-button:not(.modal-content *)::before,
 #controls--end-session-button:not(.modal-content *)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0.5rem;
@@ -192,13 +192,13 @@
 }
 
 .audio-controls-container button {
-  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg');
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_active.svg");
   width: 42px;
   height: 42px;
 }
 
 .audio-controls-container.audio-active button {
-  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg');
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/volumeicon_selected.svg");
 }
 
 .audio-controls-container svg {
@@ -213,10 +213,10 @@
   position: relative;
 }
 
-[class*='page-practiceBegin1'] .audio-controls-container button {
+[class*="page-practiceBegin1"] .audio-controls-container button {
   width: 150px;
   height: 150px;
-  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn.png');
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn.png");
   background-size: cover;
   margin: 0 auto;
 }
@@ -225,11 +225,11 @@
   outline-offset: 3px;
 }
 
-[class*='page-practiceBegin1'] .audio-controls-container svg {
+[class*="page-practiceBegin1"] .audio-controls-container svg {
   display: none;
 }
 
-[class*='page-practiceBegin1'] .audio-controls-container {
+[class*="page-practiceBegin1"] .audio-controls-container {
   position: static;
   left: unset;
   transform: unset;
@@ -237,47 +237,47 @@
   margin: 2.5rem;
 }
 
-[class*='page-practiceBegin1'] .audio-controls-container button:hover,
-[class*='page-practiceBegin1'] .audio-controls-container button:focus-visible {
-  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_hover.png');
+[class*="page-practiceBegin1"] .audio-controls-container button:hover,
+[class*="page-practiceBegin1"] .audio-controls-container button:focus-visible {
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_hover.png");
   background-size: cover;
 }
 
-[class*='page-practiceBegin1'] .audio-controls-container.audio-active button {
-  background-image: url('https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_selected.png');
+[class*="page-practiceBegin1"] .audio-controls-container.audio-active button {
+  background-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/OrtizPVAT/pvat_soundcheck_btn_selected.png");
   background-size: cover;
 }
 
-[class*='page-practiceBegin1'] .audio-controls button {
+[class*="page-practiceBegin1"] .audio-controls button {
   width: 150px;
   height: 150px;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-option-indicator.radio {
   display: none;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-group {
   width: fit-content;
   margin: 0 auto;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-group
   .content--toggle-item-option {
   border: 1px solid #000000;
   padding: 8px 8px 0 8px !important;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--response-media {
   max-height: calc(100% - 2.5rem);
   width: auto;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-inner {
   justify-content: center;
   align-items: center;
@@ -285,26 +285,26 @@
   padding: 8px 0 8px 0;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-inner:focus-visible,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-inner:active,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-inner.toggled {
   color: #ffffff;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-group
   .content--toggle-item-option:focus-visible,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-group
   .content--toggle-item-option.toggled,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-group
   .btn-check:focus-visible
   + label,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-group
   .content--toggle-item-option:active {
   background-color: #555b6e !important;
@@ -332,68 +332,68 @@
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: -9999px;
   width: 0;
   height: 0;
   background:
-    url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png')
+    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png")
       no-repeat,
-    url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png')
+    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png")
       no-repeat,
-    url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png')
+    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png")
       no-repeat,
-    url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png')
+    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png")
       no-repeat;
   pointer-events: none;
   z-index: -1;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .audio-controls-container
   button {
   position: relative;
-  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png');
+  background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png");
   background-size: cover;
 }
 
 /* Setup for sound button highlight */
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .audio-controls-container
   button::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png')
+  background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png")
     center / 42px no-repeat !important;
   pointer-events: none;
   opacity: 0;
 }
 
 /* Handle hover state */
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .audio-controls-container
   button:hover,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .audio-controls-container
   button:hover::after {
-  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png')
+  background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png")
     center / 42px no-repeat !important;
 }
 
 /* Handle active state */
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .audio-controls-container
   button:active,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .audio-controls-container
   button:active::after {
-  background: url('https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png')
+  background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png")
     center / 42px no-repeat !important;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .audio-controls-container
   button::after {
   animation: flashOrange 1s linear 10s;
@@ -406,20 +406,20 @@ body::before {
   }
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   #controls
   #controls--next-button:not(:disabled) {
   animation: revealOrange 0s linear 15s forwards !important;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .stacked-reverse
   .content--item-prompt
   .audio-controls {
   margin: 1rem 0 -1rem;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .stacked-reverse
   .content--item-prompt
   > div:last-child {
@@ -427,7 +427,7 @@ body::before {
   top: 1rem;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   #controls--next-button:not(:disabled)::after {
   animation: revealOrange 0s linear 15s forwards !important;
 }
@@ -439,7 +439,7 @@ body::before {
   }
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom']) #content > .col {
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"]) #content > .col {
   min-height: 0;
   max-height: 100%;
   display: flex;
@@ -447,28 +447,28 @@ body::before {
   flex-wrap: nowrap;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom']) #content,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"]) #content,
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   #content
   > .col
   > div,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-group,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--response-media,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-item-group
   .content--toggle-item-option {
   min-height: 0;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--item-group,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--item-group-wrapper,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--toggle-wrapper,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   > #content
   > .col
   > div:last-child {
@@ -476,22 +476,22 @@ body::before {
   min-height: 0;
 }
 
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--item-group-wrapper.stacked,
-#page:is([class^='page-practiceRound'], [class^='page-practiceEnd'], [class^='page-Screener_'], [class^='page-Custom'])
+#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
   .content--item-group-wrapper.stacked-reverse {
   flex-direction: column;
   flex-wrap: nowrap;
 }
 
-#page[class^='page-child_demographics_described_sex']
+#page[class^="page-child_demographics_described_sex"]
   .content--item-group:has(
-    label.form-label[for='input-age-in years and months']
+    label.form-label[for="input-age-in years and months"]
   ) {
   margin-bottom: 0 !important;
 }
 
-#page[class^='page-child_demographics_described_sex'] .content--input-hint {
+#page[class^="page-child_demographics_described_sex"] .content--input-hint {
   font-size: unset;
   color: unset;
 }
