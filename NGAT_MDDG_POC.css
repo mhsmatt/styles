@@ -182,6 +182,10 @@ html {
   object-fit: contain;
 }
 
+#page:is([class^="page-preTasks"]) #content > div > div > img {
+    max-width: 300px;
+}
+
 #header {
   display: none;
   background: transparent;
@@ -194,7 +198,7 @@ html {
   font-weight: 700;
 }
 
-#controls--back-button, #controls--next-button {
+#controls--back-button, #controls--next-button, #controls--redirect-button {
     bottom: 100px;
     position: relative;
 }
