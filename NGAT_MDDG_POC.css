@@ -6,12 +6,12 @@
   --hdr-pad-x: 10px;
   --hdr-pad-y: 10px;
   --header-text-color: #221f1f;
-  --ngat-zoom: 0.85;
+  --ngat-zoom: 1;
   --submit-button-height: 136px;
   --submit-button-width: 188px;
   --ngat-scale: 0.75;
   --ngat-width: 950px;
-  --ngat-height: 700px;
+  --ngat-height: 550px;
   --ngat-top-gap: 30px;
   
   /* 2x3Verbal */
@@ -137,16 +137,17 @@ html {
   max-width: var(--ngat-width) !important;
   height: var(--ngat-height) !important;
   max-height: var(--ngat-height) !important;
-  margin: 5px auto 0 !important;
-  border: 1px solid #bebebe !important;
   position: relative;
-  overflow: hidden !important;
+  overflow: visible !important;
   zoom: var(--ngat-zoom);
   transform: none !important;
 }
 
 #content {
-  min-height: 0;
+  border: 1px solid #bebebe !important;
+  height: var(--ngat-height) !important;
+  min-height: var(--ngat-height) !important;
+  max-height: var(--ngat-height) !important;
   padding: 1rem 10%;
 }
 
@@ -156,7 +157,6 @@ html {
   flex-direction: column;
   min-height: 0;
   max-height: 100%;
-  overflow: hidden;
 }
 
 #content > .col > div {
@@ -167,18 +167,12 @@ html {
   min-height: 0;
 }
 
-#content > div > div > img {
-  max-width: 50%;
-  margin-bottom: 0;
-}
-
 #content img {
   object-fit: contain;
 }
 
 #header {
-  padding: var(--hdr-pad-y) var(--hdr-pad-x);
-  font-size: 32px;
+  display: none;
   background: transparent;
 }
 
@@ -189,8 +183,9 @@ html {
   font-weight: 700;
 }
 
-#controls {
-  padding-bottom: 1.5rem;
+#controls--back-button, #controls--next-button {
+    bottom: 100px;
+    position: relative;
 }
 
 #controls--back-button {
@@ -234,8 +229,6 @@ html {
 
 .btn-center-stack {
   justify-content: space-between !important;
-  padding-right: 70px;
-  padding-left: 70px;
 }
 
 .btn-center-stack #controls--next-button:only-child,
@@ -280,7 +273,6 @@ html {
 .content--item-group-wrapper.stacked-reverse {
   flex-direction: column;
   flex-wrap: nowrap;
-  overflow: hidden;
 }
 
 .content--page-description {
@@ -289,8 +281,8 @@ html {
   left: 0 !important;
   width: auto;
   margin-bottom: 0;
-  padding: 18px var(--hdr-pad-x) !important;
-  font-size: 32px;
+  padding: 16px 32px !important;
+  font-size: 22pt;
   color: white;
   font-weight: bold;
 }
@@ -308,6 +300,8 @@ html {
   flex: 0 1 auto;
   align-self: center;
   width: auto;
+  position: relative;
+  bottom: 15px;
 }
 
 .content--toggle-item-group {
@@ -347,7 +341,7 @@ html {
 }
 
 .video-container {
-  max-width: 1100px;
+  max-width: 660px;
 }
 
 .play-button-overlay {
@@ -365,9 +359,10 @@ html {
 }
 
 [class*="practice"] #header {
-  background-color: gray;
+    display: block;
+  background-color: gray !important;
   color: white;
-  --hdr-pad-y: 32px;
+  height: 50px;
 }
 
 [class*="practice"] #header--progress-panel {
@@ -424,9 +419,16 @@ html {
   justify-content: space-between;
 }
 
+#page[class^="page-items"] #header {
+    display: block;   
+}
+
 #page[class^="page-items"] #header--progress-panel {
   justify-content: flex-start;
   width: auto;
+  position: relative;
+    top: -25px;
+    left: -60px;
 }
 
 #page[class^="page-items"] .header--title {
@@ -447,8 +449,8 @@ html {
 }
 
 .page-instructions\.2\.0 > #content > div > div:nth-child(1) > img {
-  width: 100%;
-  max-width: 1200px;
+  width: 857px;
+  /*max-width: 1200px;*/
 }
 
 .page-instructions\.2\.0 #content > div > div:nth-child(2) > div {
@@ -643,26 +645,26 @@ html {
   --resp-height: var(--grid-2x3-verbal-resp-height);
 }
 
-@media all and (min-width: 992px) and (min-height: 800px) {
-  :root {
-    --ngat-zoom: 1;
-  }
+@media all and (min-width: 992px) and (min-height: 570px) {
+	:root {
+		--ngat-zoom: 1;
+	}
 }
 
-@media all and (min-width: 1260px) and (min-height: 1075px) {
-  :root {
-    --ngat-zoom: 1.25;
-  }
+@media all and (min-width: 1260px) and (min-height: 740px) {
+	:root {
+		--ngat-zoom: 1.25;
+	}
 }
 
-@media all and (min-width: 1680px) and (min-height: 1275px) {
-  :root {
-    --ngat-zoom: 1.5;
-  }
+@media all and (min-width: 1680px) and (min-height: 860px) {
+	:root {
+		--ngat-zoom: 1.5;
+	}
 }
 
-@media all and (min-width: 2000px) and (min-height: 1875px) {
-  :root {
-    --ngat-zoom: 2;
-  }
+@media all and (min-width: 2000px) and (min-height: 1680px) {
+	:root {
+	    --ngat-zoom: 3;
+	}
 }
