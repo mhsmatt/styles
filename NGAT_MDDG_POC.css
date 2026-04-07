@@ -137,10 +137,21 @@ html {
   max-width: var(--ngat-width) !important;
   height: var(--ngat-height) !important;
   max-height: var(--ngat-height) !important;
+  margin-top: 37px;
   position: relative;
   overflow: visible !important;
   zoom: var(--ngat-zoom);
   transform: none !important;
+}
+
+.keyboard-icon-wrapper {
+    position: relative;
+    top: -20px;
+    left: 50px;
+}
+
+#page:is([class^="page-practice"]) .keyboard-icon-wrapper {
+    top: -25px;
 }
 
 #content {
@@ -435,6 +446,10 @@ html {
   padding: 0;
 }
 
+#page[class^="page-items"] {
+    margin-top: 0;
+}
+
 .page-student-info\.2\.0 #content .col:first-of-type {
   padding: 50px 50px !important;
   border: 1px solid var(--border-color) !important;
@@ -450,7 +465,7 @@ html {
 
 .page-instructions\.2\.0 > #content > div > div:nth-child(1) > img {
   width: 857px;
-  /*max-width: 1200px;*/
+  margin-bottom: 2rem !important;
 }
 
 .page-instructions\.2\.0 #content > div > div:nth-child(2) > div {
