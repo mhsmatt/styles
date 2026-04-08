@@ -253,31 +253,56 @@
   height: 150px;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-option-indicator.radio {
   display: none;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-group {
   width: fit-content;
   margin: 0 auto;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-group
   .content--toggle-item-option {
   border: 1px solid #000000;
   padding: 8px 8px 0 8px !important;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--response-media {
   max-height: calc(100% - 2.5rem);
   width: auto;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-inner {
   justify-content: center;
   align-items: center;
@@ -285,26 +310,61 @@
   padding: 8px 0 8px 0;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-inner:focus-visible,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-inner:active,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-inner.toggled {
   color: #ffffff;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-group
   .content--toggle-item-option:focus-visible,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-group
   .content--toggle-item-option.toggled,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-group
   .btn-check:focus-visible
   + label,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-group
   .content--toggle-item-option:active {
   background-color: #555b6e !important;
@@ -331,26 +391,12 @@
   border-color: #ffffff;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: -9999px;
-  width: 0;
-  height: 0;
-  background:
-    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn.png")
-      no-repeat,
-    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png")
-      no-repeat,
-    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png")
-      no-repeat,
-    url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_orange.png")
-      no-repeat;
-  pointer-events: none;
-  z-index: -1;
-}
-
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .audio-controls-container
   button {
   position: relative;
@@ -359,7 +405,12 @@ body::before {
 }
 
 /* Setup for sound button highlight */
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .audio-controls-container
   button::after {
   content: "";
@@ -372,10 +423,20 @@ body::before {
 }
 
 /* Handle hover state */
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .audio-controls-container
   button:hover,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .audio-controls-container
   button:hover::after {
   background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_hover.png")
@@ -383,20 +444,47 @@ body::before {
 }
 
 /* Handle active state */
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .audio-controls-container
   button:active,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .audio-controls-container
   button:active::after {
   background: url("https://mhsmatt.github.io/styles/images/pvat_item_sound_btn_selected.png")
     center / 42px no-repeat !important;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .audio-controls-container
   button::after {
   animation: flashOrange 1s linear 10s;
+}
+
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  ):has(.content--toggle-item-option.toggled)
+  .audio-controls-container
+  button::after {
+  animation: none !important;
+  opacity: 0 !important;
 }
 
 @keyframes flashOrange {
@@ -406,20 +494,46 @@ body::before {
   }
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   #controls
   #controls--next-button:not(:disabled) {
   animation: revealOrange 0s linear 15s forwards !important;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  ):has(.content--toggle-item-option.toggled)
+  #controls
+  #controls--next-button:not(:disabled) {
+  animation: revealOrangeAfterSelection 0s linear 10s forwards !important;
+}
+
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .stacked-reverse
   .content--item-prompt
   .audio-controls {
   margin: 1rem 0 -1rem;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .stacked-reverse
   .content--item-prompt
   > div:last-child {
@@ -427,9 +541,24 @@ body::before {
   top: 1rem;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   #controls--next-button:not(:disabled)::after {
   animation: revealOrange 0s linear 15s forwards !important;
+}
+
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  ):has(.content--toggle-item-option.toggled)
+  #controls--next-button:not(:disabled)::after {
+  animation: revealOrangeAfterSelection 0s linear 10s forwards !important;
 }
 
 @keyframes revealOrange {
@@ -439,7 +568,21 @@ body::before {
   }
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"]) #content > .col {
+@keyframes revealOrangeAfterSelection {
+  to {
+    --nav-btn-bg: black !important;
+    background: var(--nav-btn-bg-highlight) !important;
+  }
+}
+
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  #content
+  > .col {
   min-height: 0;
   max-height: 100%;
   display: flex;
@@ -447,28 +590,74 @@ body::before {
   flex-wrap: nowrap;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"]) #content,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  #content,
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   #content
   > .col
   > div,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-group,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--response-media,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-item-group
   .content--toggle-item-option {
   min-height: 0;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--item-group,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--item-group-wrapper,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--toggle-wrapper,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   > #content
   > .col
   > div:last-child {
@@ -476,9 +665,19 @@ body::before {
   min-height: 0;
 }
 
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--item-group-wrapper.stacked,
-#page:is([class^="page-practiceRound"], [class^="page-practiceEnd"], [class^="page-Screener_"], [class^="page-Custom"])
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
   .content--item-group-wrapper.stacked-reverse {
   flex-direction: column;
   flex-wrap: nowrap;
