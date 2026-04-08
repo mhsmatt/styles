@@ -199,8 +199,9 @@ html {
 }
 
 #controls--back-button, #controls--next-button, #controls--redirect-button {
-    bottom: 100px;
+    bottom: 75px;
     position: relative;
+    max-width: 75px;
 }
 
 #controls--back-button {
