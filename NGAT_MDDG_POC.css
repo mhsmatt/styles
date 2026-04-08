@@ -9,9 +9,9 @@
   --ngat-zoom: 1;
   --submit-button-height: 136px;
   --submit-button-width: 188px;
-  --ngat-scale: 0.75;
+  --ngat-scale: 1;
   --ngat-width: 950px;
-  --ngat-height: 550px;
+  --ngat-height: 508px;
   --ngat-top-gap: 30px;
   
   /* 2x3Verbal */
@@ -315,8 +315,6 @@ html {
   flex: 0 1 auto;
   align-self: center;
   width: auto;
-  position: relative;
-  bottom: 15px;
 }
 
 .content--toggle-item-group {
@@ -363,7 +361,7 @@ html {
   background-image: url(https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__playbutton_1x.png);
   background-position: center;
   background-repeat: no-repeat;
-}
+} 
 
 .video-controls-container {
   display: none;
@@ -390,6 +388,14 @@ html {
   text-align: center;
 }
 
+[class*="verbal"] {
+    .content--toggle-wrapper {
+        position: relative;
+        bottom: 30px;
+    }
+}
+
+[class*="verbal"],
 [class*="nonverbal"],
 [class*="quant"] {
   .col,
@@ -469,7 +475,7 @@ html {
 
 .page-instructions\.2\.0 > #content > div > div:nth-child(1) > img {
   width: 857px;
-  margin-bottom: 2rem !important;
+  margin-bottom: 7rem !important;
 }
 
 .page-instructions\.2\.0 #content > div > div:nth-child(2) > div {
@@ -549,9 +555,11 @@ html {
   margin-bottom: 0 !important;
 }
 
-.content--response-media {
-  width: var(--resp-width);
-  height: var(--resp-height);
+[class*="nonverbal"], [class*="quant"] {
+    .content--response-media {
+      width: var(--resp-width);
+      height: var(--resp-height);
+    }
 }
 
 /* Nonverbal */
