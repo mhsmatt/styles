@@ -472,6 +472,7 @@ body {
   #content > div > div:nth-child(1) > img {
     width: 857px;
     margin-bottom: 7rem !important;
+    background-color: #FFF;
   }
 
   #content > div > div:nth-child(2) > div {
@@ -486,7 +487,7 @@ body {
   }
 
   #controls--back-button,
-  #controls--start-button {
+  #controls--next-button {
     max-width: 100%;
     bottom: 100px;
   }
@@ -573,7 +574,7 @@ body {
     display: none;
 }
 
-#page[class^="page-instructions"]:has([id="input-text-does not exist."][value]:not([value=""]):not([value="0"])) #controls--next-button {
+#page[class^="page-instructions"]:has([id="input-text-does not exist."][value]:not([value=""])) #controls--next-button {
   display: inline-flex;
 }
 
