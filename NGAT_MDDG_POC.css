@@ -1,37 +1,29 @@
 :root {
-  /* Theme and surface */
   --background-color: #ececec;
+  --begin-arrow-right-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png");
+  --begin-arrow-right-selected-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_selected_1x.png");
   --border-color: #bebebe;
+  --button-arrow-left-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_1x.png");
+  --button-arrow-left-selected-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_selected_1x.png");
+  --button-arrow-right-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
+  --button-arrow-right-selected-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
+  --button-height: 77px;
+  --button-width: 100px;
   --hdr-pad-x: 10px;
   --hdr-pad-y: 10px;
   --header-text-color: #221f1f;
-
-  /* Layout */
   --ngat-scale: 1;
   --ngat-height: 508px;
   --ngat-width: 950px;
   --ngat-top-gap: 30px;
   --ngat-zoom: 1;
-
-  /* Assets */
-  --begin-arrow-right-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_1x.png");
-  --begin-arrow-right-selected-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__beginarrow_right_selected_1x.png");
-  --button-arrow-left-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_1x.png");
-  --button-arrow-left-selected-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_left_selected_1x.png");
-  --button-arrow-right-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_1x.png");
-  --button-arrow-right-selected-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__itemarrow_right_selected_1x.png");
   --play-button-overlay-image: url("https://cdn.mhs.com/mhscdndev/Gifted/Common/gifted__playbutton_1x.png");
   --stop-hand-image: url("https://cdn.mhs.com/mhscdn/Gifted/Common/gifted__stophand_1x.png");
+  --submit-button-height: 136px;
   --submit-button-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn.svg");
   --submit-button-selected-image: url("https://cdn.mhs.com/mhsdocs/DataGathering/MDDG/submit-btn-selected.svg");
-
-  /* Buttons */
-  --button-height: 77px;
-  --button-width: 100px;
-  --submit-button-height: 136px;
   --submit-button-width: 188px;
 
-  /* Task dimensions */
   /* 2x3Verbal */
   --grid-2x3-verbal-test-width: auto;
   --grid-2x3-verbal-test-height: auto;
@@ -499,11 +491,11 @@ body {
     bottom: 100px;
   }
 
-  #controls--next-button {
+  #controls--start-button {
     background-image: var(--begin-arrow-right-image);
   }
 
-  #controls--next-button:hover {
+  #controls--start-button:hover {
     background-image: var(--begin-arrow-right-selected-image);
   }
 }
@@ -577,6 +569,14 @@ body {
   }
 }
 
+#page[class^="page-instructions"] #controls--next-button {
+    display: none;
+}
+
+#page[class^="page-instructions"]:has([id="input-text-does not exist."][value]:not([value=""])) #controls--next-button {
+  display: inline-flex;
+}
+
 /* Ending pages */
 #page[class^="page-ending"] {
   #controls--redirect-button {
@@ -601,7 +601,6 @@ body {
 }
 
 /* Nonverbal */
-/* Standard grids */
 [class*="nonverbal"][class*="2x2"] {
   --stim-width: var(--grid-2x2-test-width);
   --stim-height: var(--grid-2x2-test-height);
@@ -609,7 +608,6 @@ body {
   --resp-height: var(--grid-2x2-resp-height);
 }
 
-/* Folding grids */
 [class*="nonverbal"][class*="2x2LargeFolding"] {
   --stim-width: var(--grid-2x2-large-folding-test-width);
   --stim-height: var(--grid-2x2-large-folding-test-height);
@@ -683,7 +681,6 @@ body {
   --resp-height: var(--grid-3x3-folding-resp-height);
 }
 
-/* Box tasks */
 [class*="nonverbal"][class*="Box"] {
   --stim-width: var(--grid-box-test-width);
   --stim-height: var(--grid-box-test-height);
@@ -692,7 +689,6 @@ body {
 }
 
 /* Quant */
-/* Standard tasks */
 [class*="quant"][class*="Equations"] {
   --stim-width: var(--grid-equations-test-width);
   --stim-height: var(--grid-equations-test-height);
