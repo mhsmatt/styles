@@ -486,7 +486,7 @@ body {
   }
 
   #controls--back-button,
-  #controls--next-button {
+  #controls--start-button {
     max-width: 100%;
     bottom: 100px;
   }
