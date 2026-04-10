@@ -550,7 +550,7 @@
   ):has(.content--toggle-item-option.toggled)
   #controls
   #controls--next-button:not(:disabled) {
-  animation-play-state: paused !important;
+  animation: none !important;
   background-color: var(--nav-btn-bg-highlight) !important;
   transition-delay: 10s;
 }
@@ -562,14 +562,14 @@
     [class^="page-Custom"]
   ):has(.content--toggle-item-option.toggled)
   #controls--next-button:not(:disabled)::after {
-  animation-play-state: paused !important;
+  animation: none !important;
   background-color: var(--nav-btn-bg-highlight) !important;
   transition-delay: 10s;
 }
 
 @keyframes revealOrange {
   to {
-    background-color: var(--nav-btn-bg-highlight) !important;
+    background-color: var(--nav-btn-bg-highlight);
   }
 }
 
