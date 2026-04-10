@@ -503,17 +503,7 @@
   #controls
   #controls--next-button:not(:disabled) {
   animation: revealOrange 0s linear 15s forwards !important;
-}
-
-#page:is(
-    [class^="page-practiceRound"],
-    [class^="page-practiceEnd"],
-    [class^="page-Screener_"],
-    [class^="page-Custom"]
-  ):has(.content--toggle-item-option.toggled)
-  #controls
-  #controls--next-button:not(:disabled) {
-  animation: revealOrangeAfterSelection 0s linear 10s forwards !important;
+  transition: background-color 0s linear 0s;
 }
 
 #page:is(
@@ -549,6 +539,20 @@
   )
   #controls--next-button:not(:disabled)::after {
   animation: revealOrange 0s linear 15s forwards !important;
+  transition: background-color 0s linear 0s;
+}
+
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  ):has(.content--toggle-item-option.toggled)
+  #controls
+  #controls--next-button:not(:disabled) {
+  animation-play-state: paused !important;
+  background-color: var(--nav-btn-bg-highlight) !important;
+  transition-delay: 10s;
 }
 
 #page:is(
@@ -558,20 +562,14 @@
     [class^="page-Custom"]
   ):has(.content--toggle-item-option.toggled)
   #controls--next-button:not(:disabled)::after {
-  animation: revealOrangeAfterSelection 0s linear 10s forwards !important;
+  animation-play-state: paused !important;
+  background-color: var(--nav-btn-bg-highlight) !important;
+  transition-delay: 10s;
 }
 
 @keyframes revealOrange {
   to {
-    --nav-btn-bg: black !important;
-    background: var(--nav-btn-bg-highlight) !important;
-  }
-}
-
-@keyframes revealOrangeAfterSelection {
-  to {
-    --nav-btn-bg: black !important;
-    background: var(--nav-btn-bg-highlight) !important;
+    background-color: var(--nav-btn-bg-highlight) !important;
   }
 }
 
