@@ -265,7 +265,7 @@ body {
 }
 
 .btn-center-stack #controls--redirect-button:only-child {
-  animation: enableBtn 0s 5s forwards;
+  animation: enableBtn 0s 300s forwards;
   opacity: 0;
   pointer-events: none;
   transition:
