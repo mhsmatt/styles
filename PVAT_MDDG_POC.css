@@ -692,3 +692,15 @@
   font-size: unset;
   color: unset;
 }
+
+@supports (-moz-appearance: none) {
+  #page:is(
+      [class^="page-practiceRound"],
+      [class^="page-practiceEnd"],
+      [class^="page-Screener_"],
+      [class^="page-Custom"]
+    )
+    .content--response-media {
+    max-height: clamp(50px, 23vh, 320px) !important;
+  }
+}
