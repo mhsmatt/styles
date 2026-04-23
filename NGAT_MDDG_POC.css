@@ -266,7 +266,7 @@ body {
 }
 
 .btn-center-stack #controls--redirect-button:only-child {
-  animation: enableBtn 0s 5s forwards;
+  animation: enableBtn 0s 300s forwards;
   opacity: 0;
   pointer-events: none;
   transition:
@@ -471,11 +471,13 @@ body {
 /* Instructions */
 #page[class^="page-instructions"] {
   .keyboard-icon-wrapper {
-    top: 5px;
+    top: -10px;
   }
+  
   #header {
     display: block;
   }
+  
   #content > div > div:nth-child(1) > img {
     width: 857px;
     margin-bottom: 7rem !important;
@@ -494,7 +496,7 @@ body {
   }
 
   #controls--back-button,
-  #controls--next-button {
+  #controls--start-button {
     max-width: 100%;
     bottom: 100px;
   }
@@ -553,10 +555,6 @@ body {
     left: 0;
     margin: 3rem;
   }
-  
-  #content > div > div > div > div > div {
-    display: none !important;
-  }
 
   #controls--next-button {
     position: absolute;
@@ -585,7 +583,7 @@ body {
     display: none;
 }
 
-#page[class^="page-instructions"]:has([id="input-text-does not exist."][value]:not([value=""])) #controls--next-button {
+#page[class^="page-instructions"]:has([id="input-text-does not exist."][value]:not([value=""]):not([value="0"])) #controls--next-button {
   display: inline-flex;
 }
 
@@ -608,8 +606,18 @@ body {
 }
 
 /* Pause pages */
-#page[class^="page-pause"] .content--markup-text {
-  font-size: 21px !important;
+#page[class^="page-pause"] {
+  .keyboard-icon-wrapper {
+    top: -10px;
+  }
+  
+  #header {
+    display: block;
+  }
+
+  .content--markup-text {
+    font-size: 21px !important;
+  }
 }
 
 /* Nonverbal */
