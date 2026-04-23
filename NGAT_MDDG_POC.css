@@ -470,6 +470,14 @@ body {
 
 /* Instructions */
 #page[class^="page-instructions"] {
+  .keyboard-icon-wrapper {
+    top: -10px;
+  }
+  
+  #header {
+    display: block;
+  }
+  
   #content > div > div:nth-child(1) > img {
     width: 857px;
     margin-bottom: 7rem !important;
