@@ -496,6 +496,7 @@ body {
   }
 
   #controls--back-button,
+  #controls--next-button,
   #controls--start-button {
     max-width: 100%;
     bottom: 100px;
@@ -579,8 +580,14 @@ body {
   }
 }
 
-#page[class^="page-instructions"] #controls--next-button {
+#page[class^="page-instructions"] {
+  .keyboard-icon-wrapper {
+    top: 5px;
+  }
+  
+  #controls--next-button {
     display: none;
+  }
 }
 
 #page[class^="page-instructions"]:has([id="input-text-does not exist."][value]:not([value=""]):not([value="0"])) #controls--next-button {
@@ -608,7 +615,7 @@ body {
 /* Pause pages */
 #page[class^="page-pause"] {
   .keyboard-icon-wrapper {
-    top: -10px;
+    top: 5px;
   }
   
   #header {
