@@ -606,8 +606,18 @@ body {
 }
 
 /* Pause pages */
-#page[class^="page-pause"] .content--markup-text {
-  font-size: 21px !important;
+#page[class^="page-pause"] {
+  .keyboard-icon-wrapper {
+    top: -10px;
+  }
+  
+  #header {
+    display: block;
+  }
+
+  .content--markup-text {
+    font-size: 21px !important;
+  }
 }
 
 /* Nonverbal */
