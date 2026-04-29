@@ -264,10 +264,10 @@
 }
 
 #page:is(
-    [class^='page-practiceRound'],
-    [class^='page-practiceEnd'],
-    [class^='page-Screener_'],
-    [class^='page-Custom']
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
   )
   .content--toggle-item-group {
   width: fit-content;
@@ -278,10 +278,10 @@
 }
 
 #page:is(
-    [class^='page-practiceRound'],
-    [class^='page-practiceEnd'],
-    [class^='page-Screener_'],
-    [class^='page-Custom']
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
   )
   .content--toggle-item-group
   .content--toggle-item-option {
@@ -374,6 +374,28 @@
   .content--toggle-item-option:active {
   background-color: #555b6e !important;
   border-color: #000000 !important;
+}
+
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  .content--toggle-item-group
+  .content--toggle-item-option:focus-visible
+  .content--toggle-item-inner,
+#page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  .content--toggle-item-group
+  .btn-check:focus-visible
+  + label
+  .content--toggle-item-inner {
+  color: #ffffff;
 }
 
 .content--response-media {
