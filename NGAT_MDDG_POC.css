@@ -590,7 +590,7 @@ body {
   }
 }
 
-#page[class^="page-instructions"]:has([id="input-text-does not exist."][value]:not([value=""]):not([value="0"])) #controls--next-button {
+#page[class^="page-instructions"]:has([id="input-b26b87a1"][value]:not([value=""]):not([value="0"])) #controls--next-button {
   display: inline-flex;
 }
 
