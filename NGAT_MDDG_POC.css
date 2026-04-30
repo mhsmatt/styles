@@ -781,3 +781,8 @@ body {
     --ngat-zoom: 3;
   }
 }
+
+/* Fixes issue with small images on Safari and possibly other browsers */
+.content--response-media {
+    max-width: none;
+}
