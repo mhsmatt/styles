@@ -785,4 +785,9 @@ body {
 /* Fixes issue with small images on Safari and possibly other browsers */
 .content--response-media {
     max-width: none;
+    width: auto;
+    height: auto;
+    display: block;
+    flex: 0 0 auto;
+    min-width: 0;
 }
