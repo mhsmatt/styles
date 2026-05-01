@@ -209,6 +209,19 @@
   transform: none;
 }
 
+#footer--text-content {
+  margin: 6px 0;
+  width: 100%;
+}
+
+#footer > :not(#footer--text-content) {
+  display: none;
+}
+
+#footer--text-content > :not(#footer--copyright) {
+  display: none;
+}
+
 #content {
   position: relative;
 }
