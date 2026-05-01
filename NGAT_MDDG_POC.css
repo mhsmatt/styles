@@ -311,10 +311,6 @@ body {
   font-weight: bold;
 }
 
-.content--response-media {
-  align-self: auto;
-}
-
 .content--text-input.form-control {
   background-color: unset;
   font-weight: bold;
@@ -419,12 +415,10 @@ body {
   }
 }
 
-[class*="nonverbal"],
-[class*="quant"] {
-  .content--response-media {
-    width: var(--resp-width);
-    height: var(--resp-height);
-  }
+.content--response-media {
+  align-self: auto;
+  width: var(--resp-width);
+  height: var(--resp-height);
 }
 
 /* Assessment flow page overrides */
@@ -780,14 +774,4 @@ body {
   :root {
     --ngat-zoom: 3;
   }
-}
-
-/* Fixes issue with small images on Safari and possibly other browsers */
-.content--response-media {
-    max-width: none;
-    width: auto;
-    height: auto;
-    display: block;
-    flex: 0 0 auto;
-    min-width: 0;
 }
