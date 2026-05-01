@@ -396,6 +396,9 @@ body {
     position: relative;
     bottom: 30px;
   }
+  .content--response-media {
+    align-self: center;
+  }
 }
 
 [class*="verbal"],
@@ -416,14 +419,11 @@ body {
 }
 
 [class*="nonverbal"],
-[class*="quant"]
-.content--response-media {
-  width: var(--resp-width);
-  height: var(--resp-height);
-}
-
-.content--response-media {
-  align-self: center;
+[class*="quant"] {
+  .content--response-media {
+    width: var(--resp-width);
+    height: var(--resp-height);
+  }
 }
 
 /* Assessment flow page overrides */
