@@ -415,10 +415,15 @@ body {
   }
 }
 
+[class*="nonverbal"],
+[class*="quant"]
 .content--response-media {
-  align-self: auto;
   width: var(--resp-width);
   height: var(--resp-height);
+}
+
+.content--response-media {
+  align-self: center;
 }
 
 /* Assessment flow page overrides */
