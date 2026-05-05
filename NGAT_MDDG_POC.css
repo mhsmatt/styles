@@ -146,7 +146,6 @@ body {
   max-width: var(--ngat-width) !important;
   height: var(--ngat-height) !important;
   max-height: var(--ngat-height) !important;
-  margin-top: 37px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -197,7 +196,6 @@ body {
 
 .keyboard-icon-wrapper {
   position: relative;
-  top: -20px;
   left: 50px;
 }
 
@@ -429,8 +427,14 @@ body {
 /* Assessment flow page overrides */
 
 /* Student info */
-#page[class^="page-student-info"] #content {
-  padding: 1rem 10%;
+#page[class^="page-student-info"] {
+    #header {
+        display: block;
+    }
+    
+    #content {
+        padding: 1rem 10%;
+    }
 }
 
 /* Practice and form */
@@ -469,10 +473,6 @@ body {
 
 /* Instructions */
 #page[class^="page-instructions"] {
-  .keyboard-icon-wrapper {
-    top: -10px;
-  }
-  
   #header {
     display: block;
   }
@@ -490,6 +490,10 @@ body {
 
 /* Pre-task pages */
 #page[class^="page-preTasks"] {
+    #header {
+        display: block;
+    }
+    
   #content > div > div > img {
     max-width: 300px;
   }
@@ -516,6 +520,10 @@ body {
 
   #header {
     display: block;
+  }
+  
+  .keyboard-icon-wrapper {
+      bottom: 30px;
   }
 
   .header--logo {
@@ -580,10 +588,6 @@ body {
 }
 
 #page[class^="page-instructions"] {
-  .keyboard-icon-wrapper {
-    top: 5px;
-  }
-  
   #controls--next-button {
     display: none;
   }
@@ -613,10 +617,6 @@ body {
 
 /* Pause pages */
 #page[class^="page-pause"] {
-  .keyboard-icon-wrapper {
-    top: 5px;
-  }
-  
   #header {
     display: block;
   }
