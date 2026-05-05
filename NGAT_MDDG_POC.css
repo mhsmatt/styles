@@ -435,10 +435,6 @@ body {
 
 /* Practice and form */
 #page[class^="page-practice"] {
-  .keyboard-icon-wrapper {
-    top: -25px;
-  }
-
   #header {
     display: block;
     background-color: gray !important;
