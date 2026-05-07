@@ -300,18 +300,108 @@
   .content--toggle-item-option {
   border: 1px solid #000000;
   padding: 8px 8px 0 8px !important;
-  height: 30vh;
+  height: 27vh;
+  width: 30vh;
+  justify-content: flex-start;
 }
 
+/* Providing a little extra room for the content on the page */
 #page:is(
+  [class^="page-practiceRound"],
+  [class^="page-practiceEnd"],
+  [class^="page-Screener_"],
+  [class^="page-Custom"]
+)
+#content {
+  padding: 0;
+}
+
+/* Maintain a 2x2 grid when possible */
+.content--toggle-item-group {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #page:is(
     [class^="page-practiceRound"],
     [class^="page-practiceEnd"],
     [class^="page-Screener_"],
     [class^="page-Custom"]
   )
-  .content--response-media {
-  max-height: calc(100% - 2.5rem);
-  width: auto;
+  .content--toggle-item-group
+  .content--toggle-item-option {
+    height: 23vh;
+    width: 25vh;
+  }
+}
+
+/* Resort back to stacked view for super small views */
+@media only screen and (max-width: 500px) {
+  .content--toggle-item-group {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Adjust scale on very large screens */
+@media only screen and (min-width: 2000px) {
+  #page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  .content--toggle-item-group
+  .content--toggle-item-option {
+    height: 27vh;
+    width: 30vh;
+    padding: 16px 8px 0 8px !important;
+  }
+
+  #page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  .content--toggle-item-group {
+    column-gap: 2rem;
+    row-gap: 1.75rem;
+  }
+
+  #page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  .content--item-group-wrapper {
+    max-width: 1840px;
+  }
+}
+
+/* Adjust scale on extremely large screens */
+@media only screen and (min-width: 4500px) {
+  #page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  .content--toggle-item-group
+  .content--toggle-item-option {
+    height: 20vh;
+    width: 23vh;
+  }
+
+  #page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  .content--item-group-wrapper {
+    max-width: 2500px;
+  }
 }
 
 #page:is(
@@ -559,16 +649,18 @@
 }
 
 #page:is(
-    [class^="page-practiceRound"],
-    [class^="page-practiceEnd"],
-    [class^="page-Screener_"],
-    [class^="page-Custom"]
+    [class^='page-practiceRound'],
+    [class^='page-practiceEnd'],
+    [class^='page-Screener_'],
+    [class^='page-Custom']
   )
   .stacked-reverse
   .content--item-prompt
   > div:last-child {
-  position: absolute;
-  top: 1rem;
+  /* position: absolute;
+  top: 1rem; */
+  /* The text does not show on PVAT */
+  display: none;
 }
 
 #page:is(
@@ -628,7 +720,7 @@
   flex-wrap: nowrap;
 }
 
-#page:is(
+/* #page:is(
     [class^="page-practiceRound"],
     [class^="page-practiceEnd"],
     [class^="page-Screener_"],
@@ -667,7 +759,7 @@
   .content--toggle-item-group
   .content--toggle-item-option {
   min-height: 0;
-}
+} */
 
 #page:is(
     [class^="page-practiceRound"],
