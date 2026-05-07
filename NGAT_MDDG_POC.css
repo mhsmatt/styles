@@ -552,6 +552,10 @@ body {
 
 /* Review pages */
 #page[class^="page-review"] {
+  #header {
+    display: block;
+  }
+  
   #controls--back-button,
   #controls--next-button {
     max-width: 100%;
@@ -599,6 +603,10 @@ body {
 
 /* Ending pages */
 #page[class^="page-ending"] {
+  #header {
+    display: block;
+  }
+  
   #controls--redirect-button {
     max-width: 100%;
     bottom: 100px;
