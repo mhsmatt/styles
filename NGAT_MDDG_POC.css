@@ -627,6 +627,12 @@ body {
   #header {
     display: block;
   }
+
+  #content > div > div > div > div > span:nth-child(1) {
+    max-width: 85%;
+    margin-bottom: 0;
+    content: var(--stop-hand-image);
+  }
   
   #controls--redirect-button {
     max-width: 100%;
