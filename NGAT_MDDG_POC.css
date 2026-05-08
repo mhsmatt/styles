@@ -645,7 +645,7 @@ body {
     bottom: 100px;
   }
 
-  .content--markup-text {
+  .content--markup-text > p {
     display: none;
   }
 }
