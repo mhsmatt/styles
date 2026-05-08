@@ -623,6 +623,12 @@ body {
   }
 }
 
+#page[class^="page-completed"] {
+  #header {
+    display: block;
+  }
+}
+
 #page[class^="page-timeout"] {
   #header {
     display: block;
