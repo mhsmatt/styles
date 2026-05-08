@@ -623,6 +623,21 @@ body {
   }
 }
 
+#page[class^="page-timeout"] {
+  #header {
+    display: block;
+  }
+  
+  #controls--redirect-button {
+    max-width: 100%;
+    bottom: 100px;
+  }
+
+  .content--markup-text {
+    display: none;
+  }
+}
+
 /* Pause pages */
 #page[class^="page-pause"] {
   #header {
