@@ -428,6 +428,10 @@ body {
 
 /* Student info */
 #page[class^="page-student-info"] {
+    .keyboard-icon-wrapper {
+      display: none;
+    }
+  
     #header {
         display: block;
     }
@@ -490,9 +494,13 @@ body {
 
 /* Pre-task pages */
 #page[class^="page-preTasks"] {
-    #header {
-        display: block;
-    }
+  .keyboard-icon-wrapper {
+    display: none;
+  }
+  
+  #header {
+      display: block;
+  }
     
   #content > div > div > img {
     max-width: 300px;
@@ -552,6 +560,10 @@ body {
 
 /* Review pages */
 #page[class^="page-review"] {
+  .keyboard-icon-wrapper {
+    display: none;
+  }
+  
   #header {
     display: block;
   }
@@ -603,6 +615,10 @@ body {
 
 /* Ending pages */
 #page[class^="page-ending"] {
+  .keyboard-icon-wrapper {
+    display: none;
+  }
+  
   #header {
     display: block;
   }
@@ -630,6 +646,10 @@ body {
 }
 
 #page[class^="page-timeout"] {
+  .keyboard-icon-wrapper {
+    display: none;
+  }
+  
   #header {
     display: block;
   }
