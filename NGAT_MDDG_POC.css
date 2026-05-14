@@ -804,6 +804,38 @@ body {
   --resp-height: var(--grid-2x3-verbal-resp-height);
 }
 
+/* target option 1 */
+#page:is([class^="page-practice-verbal-3"], [class^="page-practice-quant-2"])
+  .content--toggle-item-group:has(.content--toggle-item-option.toggled:not(:nth-of-type(1)))
+  .content--toggle-item-option:nth-of-type(1),
+
+/* target option 2 */
+#page:is([class^="page-practice-verbal-1"])
+  .content--toggle-item-group:has(.content--toggle-item-option.toggled:not(:nth-of-type(2)))
+  .content--toggle-item-option:nth-of-type(2),
+
+/* target option 3 */
+#page:is([class^="page-practice-nonverbal-2"])
+  .content--toggle-item-group:has(.content--toggle-item-option.toggled:not(:nth-of-type(3)))
+  .content--toggle-item-option:nth-of-type(3),
+
+/* target option 4 */
+#page:is([class^="page-practice-nonverbal-1"], [class^="page-practice-quant-1"])
+  .content--toggle-item-group:has(.content--toggle-item-option.toggled:not(:nth-of-type(4)))
+  .content--toggle-item-option:nth-of-type(4),
+
+/* target option 5 */
+#page:is([class^="page-practice-nonverbal-3"], [class^="page-practice-quant-3"])
+  .content--toggle-item-group:has(.content--toggle-item-option.toggled:not(:nth-of-type(5)))
+  .content--toggle-item-option:nth-of-type(5),
+
+/* target option 6 */
+#page:is([class^="page-practice-verbal-2"])
+  .content--toggle-item-group:has(.content--toggle-item-option.toggled:not(:nth-of-type(6)))
+  .content--toggle-item-option:nth-of-type(6) {
+  animation: flickerAnimation 3s ease-in-out infinite;
+}
+
 @keyframes enableBtn {
   to {
     opacity: 1;
