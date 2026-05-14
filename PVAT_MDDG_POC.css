@@ -316,18 +316,21 @@
   padding: 0;
 }
 
-/* Maintain a 2x2 grid when possible */
-#page:is(
-  [class^="page-practiceRound"],
-  [class^="page-practiceEnd"],
-  [class^="page-Screener_"],
-  [class^="page-Custom"]
-)
-.content--toggle-item-group {
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-}
+/*@media only screen and (max-width: 600px) {*/
+/*  #page:is(*/
+/*    [class^="page-practiceRound"],*/
+/*    [class^="page-practiceEnd"],*/
+/*    [class^="page-Screener_"],*/
+/*    [class^="page-Custom"]*/
+/*  )*/
+/*  .content--toggle-item-group*/
+/*  .content--toggle-item-option {*/
+/*    height: 23vh;*/
+/*    width: 25vh;*/
+/*  }*/
+/*}*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   #page:is(
     [class^="page-practiceRound"],
     [class^="page-practiceEnd"],
@@ -336,13 +339,38 @@
   )
   .content--toggle-item-group
   .content--toggle-item-option {
-    height: 23vh;
-    width: 25vh;
+    height: 28vh;
+    width: 30vh;
+  }
+  
+  #page:is(
+    [class^="page-practiceRound"],
+    [class^="page-practiceEnd"],
+    [class^="page-Screener_"],
+    [class^="page-Custom"]
+  )
+  .stacked-reverse
+  .content--item-prompt
+  .audio-controls {
+    margin: 0 !important;
   }
 }
 
+@media only screen and (min-width: 300px) {
+  /* Maintain a 2x2 grid when possible */
+    #page:is(
+      [class^="page-practiceRound"],
+      [class^="page-practiceEnd"],
+      [class^="page-Screener_"],
+      [class^="page-Custom"]
+    )
+    .content--toggle-item-group {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
 /* Resort back to stacked view for super small views */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 300px) {
   .content--toggle-item-group {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
