@@ -308,27 +308,12 @@
 /* Providing a little extra room for the content on the page */
 #page:is(
   [class^="page-practiceRound"],
-  [class^="page-practiceEnd"],
   [class^="page-Screener_"],
   [class^="page-Custom"]
 )
 #content {
   padding: 0;
 }
-
-/*@media only screen and (max-width: 600px) {*/
-/*  #page:is(*/
-/*    [class^="page-practiceRound"],*/
-/*    [class^="page-practiceEnd"],*/
-/*    [class^="page-Screener_"],*/
-/*    [class^="page-Custom"]*/
-/*  )*/
-/*  .content--toggle-item-group*/
-/*  .content--toggle-item-option {*/
-/*    height: 23vh;*/
-/*    width: 25vh;*/
-/*  }*/
-/*}*/
 
 @media only screen and (max-width: 400px) {
   #page:is(
