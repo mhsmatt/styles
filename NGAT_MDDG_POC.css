@@ -798,7 +798,7 @@ body {
 }
 
 /* Verbal (2x3Verbal: no testSize, so only response size) */
-[class*="verbal"] {
+[class*="verbal"]:not([class*="nonverbal"]) {
   --resp-width: var(--grid-2x3-verbal-resp-width);
   --resp-height: var(--grid-2x3-verbal-resp-height);
 }
