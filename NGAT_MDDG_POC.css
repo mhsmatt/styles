@@ -379,17 +379,16 @@ body {
   margin-bottom: 0 !important;
 }
 
-[class*="verbal"] #content {
-  padding: 1rem 8%;
-}
-
 [class*="quant"] .content--toggle-item-inner div,
 [class*="nonverbal"] .content--toggle-item-inner div {
   width: 100%;
   text-align: center;
 }
 
-[class*="verbal"] {
+[class*="verbal"]:not([class*="nonverbal"]) { 
+  #content {
+    padding: 1rem 8%;
+  }
   .content--toggle-wrapper {
     position: relative;
     bottom: 30px;
