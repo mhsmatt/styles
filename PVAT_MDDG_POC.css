@@ -21,6 +21,10 @@
   margin-left: auto;
 }
 
+#controls .btn-center-stack > #controls--next-button:only-child {
+  margin-right: 0;
+}
+
 @media only screen and (max-width: 767px) {
   .btn-center-stack {
     flex-direction: row;
