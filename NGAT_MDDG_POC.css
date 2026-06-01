@@ -521,6 +521,16 @@ body {
   }
 }
 
+#page:is([class^='page-practice'], [class^='page-Form'], [class^='page-items'])
+  .content--item-group-wrapper:is(.stacked, .stacked-reverse)
+  > [id$='-label'] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0;
+  align-self: stretch;
+}
+
 /* Item pages */
 #page[class^="page-items"] {
   margin-top: 0;
